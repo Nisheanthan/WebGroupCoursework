@@ -1,0 +1,32 @@
+form{
+    text-align: center;
+}
+body{
+    font-size: 18px;
+}
+select{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.thumbnail-image{
+    width: 100px;
+    cursor: pointer;
+}
+.thumbnail-radio{
+    display: none;
+}
+.thumbnail-radio:checked + .thumbnail-image{
+    border: 3px solid green;
+}
+.selected-image{
+    width: 522px;
+}
+.form-label{
+    display: block;
+    margin-bottom: 5px
+}
+.form-set{
+    margin-top: 15px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="2.css" />
+</head>
+
+<body>
+    <form>
+        <label>
+            <input type="radio" class="thumbnail-radio" name="thumbnails" value="1" onchange="onThmbnailChange(this.form)"
+                checked />
+            <img src="images/1.jpg" class="thumbnail-image" />
+        </label>
+        <label>
+            <input type="radio" class="thumbnail-radio" name="thumbnails" onchange="onThmbnailChange(this.form)" value="2" />
+            <img src="images/2.jpg" class="thumbnail-image" />
+        </label>
+        <label>
+            <input type="radio" class="thumbnail-radio" name="thumbnails" onchange="onThmbnailChange(this.form)" value="3" />
+            <img src="images/3.jpg" class="thumbnail-image" />
+        </label>
+        <label>
+            <input type="radio" class="thumbnail-radio" name="thumbnails" onchange="onThmbnailChange(this.form)" value="4" />
+            <img src="images/4.jpg" class="thumbnail-image" />
+        </label>
+        <label>
+            <input type="radio" class="thumbnail-radio" name="thumbnails" onchange="onThmbnailChange(this.form)" value="5" />
+            <img src="images/5.jpg" class="thumbnail-image" />
+        </label>
+        <div>
+            <img id="selected-image" class="selected-image" src="images/1.jpg" />
+            <div>
+                <p id="selected-image-description">
+                    Shot of two businesswoman working together in an office.
+                </p>
+            </div>
+        </div>
+        <div class="form-set">
+            <label class="form-label">Background Color</label>
+            <select name="backgroundColor" onchange="onBackgroundColorChange(this.form)">
+                <option value="#000000" style="background-color: Black;color: #FFFFFF;">Black</option>
+                <option value="#808080" style="background-color: Gray;">Gray</option>
+                <option value="#A9A9A9" style="background-color: DarkGray;">DarkGray</option>
+                <option value="#D3D3D3" style="background-color: LightGrey;">LightGray</option>
+                <option value="#FFFFFF" style="background-color: White;" selected="selected">White</option>
+                <option value="#7FFFD4" style="background-color: Aquamarine;">Aquamarine</option>
+                <option value="#0000FF" style="background-color: Blue;">Blue</option>
+                <option value="#000080" style="background-color: Navy;color: #FFFFFF;">Navy</option>
+                <option value="#800080" style="background-color: Purple;color: #FFFFFF;">Purple</option>
+                <option value="#FF1493" style="background-color: DeepPink;">DeepPink</option>
+                <option value="#EE82EE" style="background-color: Violet;">Violet</option>
+                <option value="#FFC0CB" style="background-color: Pink;">Pink</option>
+                <option value="#006400" style="background-color: DarkGreen;color: #FFFFFF;">DarkGreen</option>
+                <option value="#008000" style="background-color: Green;color: #FFFFFF;">Green</option>
+                <option value="#9ACD32" style="background-color: YellowGreen;">YellowGreen</option>
+                <option value="#FFFF00" style="background-color: Yellow;">Yellow</option>
+                <option value="#FFA500" style="background-color: Orange;">Orange</option>
+                <option value="#FF0000" style="background-color: Red;">Red</option>
+                <option value="#A52A2A" style="background-color: Brown;">Brown</option>
+                <option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
+                <option value="#F5F5DC" style="background-color: Beige;">Beige</option>
+            </select>
+        </div>
+        <div class="form-set">
+            <label class="form-label">Text Color</label>
+            <select name="textColor" onchange="onTextColorChange(this.form)">
+                <option value="#000000" style="background-color: Black;color: #FFFFFF;" selected="selected">Black</option>
+                <option value="#808080" style="background-color: Gray;">Gray</option>
+                <option value="#A9A9A9" style="background-color: DarkGray;">DarkGray</option>
+                <option value="#D3D3D3" style="background-color: LightGrey;">LightGray</option>
+                <option value="#FFFFFF" style="background-color: White;">White</option>
+                <option value="#7FFFD4" style="background-color: Aquamarine;">Aquamarine</option>
+                <option value="#0000FF" style="background-color: Blue;">Blue</option>
+                <option value="#000080" style="background-color: Navy;color: #FFFFFF;">Navy</option>
+                <option value="#800080" style="background-color: Purple;color: #FFFFFF;">Purple</option>
+                <option value="#FF1493" style="background-color: DeepPink;">DeepPink</option>
+                <option value="#EE82EE" style="background-color: Violet;">Violet</option>
+                <option value="#FFC0CB" style="background-color: Pink;">Pink</option>
+                <option value="#006400" style="background-color: DarkGreen;color: #FFFFFF;">DarkGreen</option>
+                <option value="#008000" style="background-color: Green;color: #FFFFFF;">Green</option>
+                <option value="#9ACD32" style="background-color: YellowGreen;">YellowGreen</option>
+                <option value="#FFFF00" style="background-color: Yellow;">Yellow</option>
+                <option value="#FFA500" style="background-color: Orange;">Orange</option>
+                <option value="#FF0000" style="background-color: Red;">Red</option>
+                <option value="#A52A2A" style="background-color: Brown;">Brown</option>
+                <option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
+                <option value="#F5F5DC" style="background-color: Beige;">Beige</option>
+            </select>
+        </div>
+    </form>
+    <script>
+        function getRadioValue(radioArray) {
+            var i;
+            for (i = 0; i < radioArray.length; i++) {
+                if (radioArray[i].checked) {
+                    return radioArray[i].value;
+                }
+            }
+            return "";
+        }
+
+        function onThmbnailChange(formRef) {
+            //https://www.gettyimages.com/photos/description?mediatype=photography&phrase=description&sort=mostpopular
+            var descriptions = {
+                1: "Shot of two businesswoman working together in an office.",
+                2: "Leading team is inspiring and rewarding.",
+                3: "Scientists Working in the Laboratory.",
+                4: "Cropped shot of a young businesswoman working late on a digital tablet in an office.",
+                5: "Studio shot of a diverse group of creative employees embracing each other against a grey background."
+            }
+            var selectedThumbnail = getRadioValue(formRef.thumbnails);
+            document.getElementById("selected-image").setAttribute("src", "images/" + selectedThumbnail + ".jpg");
+            document.getElementById("selected-image-description").innerText = descriptions[selectedThumbnail];
+        }
+
+        function onBackgroundColorChange(formRef){
+            document.body.style.backgroundColor = formRef.backgroundColor.value;
+        }
+        function onTextColorChange(formRef){
+            document.body.style.color = formRef.textColor.value;
+        }
+    </script>
+</body>
+
+</html>
