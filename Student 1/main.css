@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(39, 39, 39);
+    /* background-color: rgb(39, 39, 39); */
+    background-image: url("footballBackground.jpg");
+    background-size: 100%;
 }
 h1{
     color: aliceblue;
@@ -8,8 +10,10 @@ h1{
     margin: -75px 10px 00;   
     width: 258px; 
     height: 340 px;  
-    background-color:rgb(253, 221, 221);  
+    /* background-color:rgb(253, 221, 221);   */
+    background-color:none; 
     float: right;
+    opacity: 0.5;
 }
 .names{
     width: 230px;
@@ -21,6 +25,7 @@ h1{
     color: beige;
     font-size: 25px;  
     font-weight:bold; 
+    opacity: 1;
 }
 .secound_name{
     color: beige;
@@ -34,4 +39,10 @@ h1{
 #minustext{
     width: 30px;
     height: 30px;
+}
+.zoomInOut{
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
