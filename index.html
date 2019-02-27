@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
+
 <body>
-    
+    <ul>
+        <li><a class="active" href="#Student 4/8/8.html" onclick="selectMenuItem(this)">Home</a></li>
+        <li><a href="#Student 2/Hello.html" onclick="selectMenuItem(this)">News</a></li>
+        <li><a href="#Student 4/6/6.html" onclick="selectMenuItem(this)">Contact</a></li>
+        <li><a href="#Student03/quiz_page.html" onclick="selectMenuItem(this)">About</a></li>
+    </ul>
+    <div id="container">
+        <object id="obj" type="text/html" data="Student 4/8/8.html" style="width: 100%;height: -webkit-fill-available;">
+        </object>
+    </div>
+
+    <script>
+        function selectMenuItem(elem) {
+            document.getElementById("obj").setAttribute("data", elem.href.replace("index.html", "").replace("#", "/"));
+            document.getElementsByClassName("active")[0].classList.remove("active");
+            elem.classList.add("active");
+        }
+    </script>
 </body>
+
 </html>

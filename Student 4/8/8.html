@@ -3,7 +3,7 @@
 
 <head>
     <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="2.css" />
+    <link rel="stylesheet" type="text/css" href="8.css" />
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             <img id="selected-image" class="selected-image" src="images/1.jpg" />
             <div>
                 <p id="selected-image-description">
-                    Shot of two businesswoman working together in an office.
+                    1. Lionel Messi, Barcelona | €33m
                 </p>
             </div>
         </div>
@@ -104,11 +104,11 @@
         function onThmbnailChange(formRef) {
             //https://www.gettyimages.com/photos/description?mediatype=photography&phrase=description&sort=mostpopular
             var descriptions = {
-                1: "Shot of two businesswoman working together in an office.",
-                2: "Leading team is inspiring and rewarding.",
-                3: "Scientists Working in the Laboratory.",
-                4: "Cropped shot of a young businesswoman working late on a digital tablet in an office.",
-                5: "Studio shot of a diverse group of creative employees embracing each other against a grey background."
+                1: "1. Lionel Messi, Barcelona | €33m",
+                2: "2. David Beckham | €31.5m",
+                3: "3. Cristiano Ronaldo, Real Madrid | €29.2m",
+                4: "4. Samuel Eto'o, Anzhi | €23.3m",
+                5: "5. Wayne Rooney, Man Utd | €20.6m"
             }
             var selectedThumbnail = getRadioValue(formRef.thumbnails);
             document.getElementById("selected-image").setAttribute("src", "images/" + selectedThumbnail + ".jpg");
