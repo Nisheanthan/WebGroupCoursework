@@ -17,7 +17,56 @@ var quiz = [
         choiceB : "Episkyros",
         choiceC : "kemari",
         correct : "B"
-    }
+    },
+    // {
+    //     question : "Which of the following country hosted the first Football World Cup?",
+    //     choiceA : "Uruguay",
+    //     choiceB : "Argentina",
+    //     choiceC : "Brazil",
+    //     correct : "A"
+    // },
+    // {
+    //     question : "Who among the following scored the first goal in World Cup history?",
+    //     choiceA : "Johino",
+    //     choiceB : "Pele",
+    //     choiceC : "Lucien",
+    //     correct : "C"
+    // },
+    // {
+    //     question : "Which of following team do not play in stripes?",
+    //     choiceA : "Newcastle",
+    //     choiceB : "Southampton",
+    //     choiceC : "Tottenham Hotspur",
+    //     correct : "C"
+    // },
+    // {
+    //     question : "When was the first FIFA World Cup inaugurated?",
+    //     choiceA : "1932",
+    //     choiceB : "1930",
+    //     choiceC : "1931",
+    //     correct : "B"
+    // },
+    // {
+    //     question : "Which country became the first nation to win the Football World Cup?",
+    //     choiceA : "Uruguay",
+    //     choiceB : "Germany",
+    //     choiceC : "Argentina",
+    //     correct : "A"
+    // },
+    // {
+    //     question : "Who among the following achieved the first World Cup hat-trick?",
+    //     choiceA : "Bert",
+    //     choiceB : "Lucien",
+    //     choiceC : "Pele",
+    //     correct : "A"
+    // },
+    // {
+    //     question : "When was first official international football match was played?",
+    //     choiceA : "1929",
+    //     choiceB : "1872",
+    //     choiceC : "1902",
+    //     correct : "B"
+    // }
 ];
 
 const lastQuestion = quiz.length - 1;
@@ -34,7 +83,7 @@ var totalTime = 0;
 var runner;
 var instruction;
 
-console.log('Welcome Football Quiz Page');
+console.log('Welcome To Football Quiz Page');
 
 // start quiz
 function startQuiz(){
@@ -82,8 +131,11 @@ function startTimer(){
         document.getElementById("timeBar").style.width = count * gaugeUnit + "px";
         if (count <= 3) {
            document.getElementById("timeBar").style.backgroundColor = "#ff4d4d";
-           document.getElementById("counter").style.color = "#ff4d4d";
-        } else {
+           document.getElementById("counter").style.color = "black";
+        } else if(count <= 5){
+            document.getElementById("timeBar").style.backgroundColor = "yellow";
+            document.getElementById("counter").style.color = "black";
+        }else {
             document.getElementById("timeBar").style.backgroundColor = "mediumseagreen";
             document.getElementById("counter").style.color = "black";
         }
