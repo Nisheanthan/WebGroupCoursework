@@ -1,0 +1,113 @@
+body{
+}
+
+#cvContent{
+	position: absolute;
+	padding: 15px;
+	width:60%;
+	left:270px;
+	top:15px;
+	border: 2px solid black;
+	box-shadow: 0px 5px 15px black;
+}
+h4{
+	line-height: 0.8;
+}
+h3 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 5px 20px 1px; 
+} 
+
+h3 span { 
+   background:#fff; 
+   padding:0 10px; 
+}
+
+aside{
+	float: right;
+	border-left:2px solid black;
+	width:40%;
+}
+
+aside img{
+	position: relative;
+	left: 100px;
+	top:15px;
+	border-radius: 50%;
+	width: 180px; 
+	height: 200px;
+	border-style: double;
+}
+
+.nameId{
+	position: relative;
+	left: 10px;
+	line-height: 50%;
+	text-align: center;
+}
+
+.contactDetail{
+	text-align: justify;
+	width: 100%;
+}
+
+.contactDetail p{
+	font-size: 16px;
+	position: relative;
+	left: 25px;
+}
+
+.contactDetail p span, .personalDetail p span{
+	font-weight: bold;
+}
+
+.personalDetail p, .personalInterest p{
+	position: relative;
+	left: 25px;
+}
+
+#interest1, #interest2, #interest3, #interest4{
+	width:100px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	position: relative;
+}
+#interest1{
+	left: 20px;
+}
+#interest2{
+	left: 140px;
+}
+#interest3{
+	left: 30px;
+}
+#interest4{
+	left: 210px;
+}
+section{
+	float: left;
+	width:55%;
+	padding-left: 10px;
+}
+
+.aLevel{
+	width: 49%;
+	height: 310px;
+	float:left;
+}
+
+.oLevel{
+	width: 50%;
+	height: 310px;
+	float: right;
+}
+
+.professionalDetail{
+	margin-bottom: 20px;
+}
