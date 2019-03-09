@@ -1,48 +1,99 @@
-body{
-    /* background-color: rgb(39, 39, 39); */
-    background-image: url("footballBackground.jpg");
-    background-size: 100%;
+form {
+    width: 400px;
+    box-shadow: 0px 0px 28px 0px rgba(214, 214, 214, 1);
+    padding: 35px
 }
-h1{
-    color: aliceblue;
+
+.form-container {
+    display: flex;
+    justify-content: center;
 }
-.name_Set{
-    margin: -75px 10px 00;   
-    width: 258px; 
-    height: 340 px;  
-    /* background-color:rgb(253, 221, 221);   */
-    background-color:none; 
+
+.rating input {
+    display: none;
+}
+
+.rating {
+    font-size: 40px;
+}
+
+.input-section {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.input-section input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    padding: 12px 20px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.error-box {
+    color: rgb(185, 74, 72);
+    border: 1px solid rgb(238, 211, 215);
+    background-color: rgb(242, 222, 222);
+    padding: 12px 20px;
+    display: none;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
     float: right;
-    opacity: 0.5;
+    font-size: 28px;
+    font-weight: bold;
 }
-.names{
-    width: 230px;
-    height: 60px; 
-    margin: 10px; 
-    padding: 5px;
-    background-color:rgb(51, 51, 51);
-    border-radius: 5px;
-    color: beige;
-    font-size: 25px;  
-    font-weight:bold; 
-    opacity: 1;
-}
-.secound_name{
-    color: beige;
-    font-size: 18px;
-    font-weight: 100;
-}
-#plustext{
-    width: 30px;
-    height: 30px;
-}
-#minustext{
-    width: 30px;
-    height: 30px;
-}
-.zoomInOut{
-    /* float: right; */
-    position: absolute;
-    right: 0;
-    bottom: 0;
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
