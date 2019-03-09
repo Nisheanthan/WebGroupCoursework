@@ -1,6 +1,5 @@
 body {
     margin: 0px;
-    overflow-y: hidden;
 }
 
 ul {
@@ -39,4 +38,45 @@ li:last-child {
 
 #container {
     margin-left: 200px;
+}
+
+.main-heading{
+    position: absolute;
+    text-align: center;
+    color: white;
+    left: 50%;
+    font-size: 50px;
+}
+
+.main-image{
+    width: 100%;
+}
+
+.caption{
+    position: absolute;
+    color: white;
+    left: 42%;
+    margin-top: 20%;
+}
+
+.right-panel{
+    height: 300px;
+    width: 40%;
+    background: bisque;
+    margin-left: 60%;
+}
+
+.left-panel{
+    height: 600px;
+    width: 60%;
+    background: aqua;
+    float: left;
+}
+
+.items{
+    float: left;
+    width: 300px;
+    height: 400px;
+    background: burlywood;
+    margin-left: 20px;
 }
