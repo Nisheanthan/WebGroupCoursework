@@ -13,8 +13,8 @@ h1{
     /* background-color:rgb(253, 221, 221);   */
     background-color:none; 
     float: right;
-    opacity: 0.5;
-}
+    /* opacity: 0.5; */
+} 
 .names{
     width: 230px;
     height: 60px; 
