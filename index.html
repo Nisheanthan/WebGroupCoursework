@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <ul>
+    <ul id="navigation">
         <li><a class="active" href="#Student 4/8/8.html" onclick="selectMenuItem(this)">Home</a></li>
         <li><a href="#Student 2/Hello.html" onclick="selectMenuItem(this)">News</a></li>
         <li><a href="#Student 4/6/6.html" onclick="selectMenuItem(this)">Contact</a></li>
@@ -15,6 +15,8 @@
     </ul>
     <div id="container">
         <div>
+            <input type="checkbox" id="sidebartoggler" onchange="showNavigation()">
+            <label class="toggle" for="sidebartoggler">☰</label>
             <h1 class="main-heading">Playful</h1>
             <h2 class="caption">Rugby Gives Confidence And A bit-More</h2>
             <img class="main-image"
@@ -49,6 +51,15 @@
 
 
     </div>
+
+    <script>
+        showNavigation();
+        function showNavigation() {
+            var value = document.getElementById("sidebartoggler").checked;
+            document.getElementById("navigation").style.display = value ? "none" : "block";
+            document.getElementById("container").style.marginLeft = value ? "0px" : "200px";
+        }
+    </script>
 </body>
 
 </html>

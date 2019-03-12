@@ -4,6 +4,10 @@ form {
     padding: 35px
 }
 
+textarea{
+    resize: vertical;
+}
+
 .form-container {
     display: flex;
     justify-content: center;
@@ -46,6 +50,11 @@ form {
     background-color: rgb(242, 222, 222);
     padding: 12px 20px;
     display: none;
+}
+
+.input-error{
+    border: 2px solid rgb(238, 211, 215) !important;
+    background-color: rgb(242, 222, 222) !important;
 }
 
 /* The Modal (background) */
