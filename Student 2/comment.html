@@ -66,23 +66,30 @@
 
         function showModal(show) {
             var modal = document.getElementById('myModal');
-            var username = document.getElementById("username").value;
-            var useremail = document.getElementById("useremail").value;
-            var usercomment = document.getElementById("usercomment").value;
+            var usernameElem = document.getElementById("username");
+            var useremailElem = document.getElementById("useremail");
+            var usercommentElem = document.getElementById("usercomment");
+            var useremail = useremailElem.value;
+            var username = usernameElem.value;
+            var usercomment = usercommentElem.value;
 
-            if (username == ""){
-                showErrorMessage("Name is required");
+            showErrorMessage("", useremailElem);
+            showErrorMessage("", usernameElem);
+            showErrorMessage("", usercommentElem);
+
+            if (username == "") {
+                showErrorMessage("Name is required", usernameElem);
                 return;
-            } else if (useremail == ""){
-                showErrorMessage("Email is required");
+            } else if (useremail == "") {
+                showErrorMessage("Email is required", useremailElem);
                 return;
             } else if (!emailRegex.test(useremail)) {
-                showErrorMessage("Email is not valid");
+                showErrorMessage("Email is not valid", useremailElem);
                 return;
-            } else if (usercomment == ""){
-                showErrorMessage("Comment is required");
+            } else if (usercomment == "") {
+                showErrorMessage("Comment is required", usercommentElem);
                 return;
-            } else if (currentRating == 0){
+            } else if (currentRating == 0) {
                 showErrorMessage("Rating is required");
                 return;
             } else {
@@ -92,13 +99,32 @@
             modal.style.display = show ? "block" : "none";
             if (show) {
                 document.getElementById("modal-content-p").innerText = "Dear " + username + " (" + useremail + "), Thanks for the feedback. Your have commented " + usercomment + " and rated with " + currentRating + " stars"
+            } else {
+                usernameElem.value = "";
+                useremailElem.value = "";
+                usercommentElem.value = "";
+                usernameElem.classList.remove("input-error");
+                useremailElem.classList.remove("input-error");
+                usercommentElem.classList.remove("input-error");
+                showErrorMessage("");
+                var radios = document.getElementsByName('stars');
+                for (var i = radios.length; i--;)
+                    radios[i].parentElement.style.color = "#000000";
+                currentRating = 0;
             }
         }
 
-        function showErrorMessage(errorMessage){
+        function showErrorMessage(errorMessage, element) {
             var errorMessageElement = document.getElementById("error-box")
             errorMessageElement.style.display = errorMessage ? "block" : "none";
             errorMessageElement.innerText = errorMessage;
+            if(!element)
+                return;
+            if(errorMessage){
+                element.classList.add("input-error");
+            } else{
+                element.classList.remove("input-error");
+            }
         }
     </script>
 </body>

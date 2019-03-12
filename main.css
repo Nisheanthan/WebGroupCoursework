@@ -2,6 +2,19 @@ body {
     margin: 0px;
 }
 
+#sidebartoggler { display: none; }
+
+.toggle {
+    position: absolute;
+    margin: 10px;
+    z-index: 1;
+    font-size: 30px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -30,17 +43,11 @@ li a:hover:not(.active) {
     color: white;
 }
 
-li:last-child {
-    position: fixed;
-    bottom: 0px;
-    width: 200px;
-}
-
 #container {
     margin-left: 200px;
 }
 
-.main-heading{
+.main-heading {
     position: absolute;
     text-align: center;
     color: white;
@@ -48,32 +55,32 @@ li:last-child {
     font-size: 50px;
 }
 
-.main-image{
+.main-image {
     width: 100%;
 }
 
-.caption{
+.caption {
     position: absolute;
     color: white;
     left: 42%;
     margin-top: 20%;
 }
 
-.right-panel{
+.right-panel {
     height: 300px;
     width: 40%;
     background: bisque;
     margin-left: 60%;
 }
 
-.left-panel{
+.left-panel {
     height: 600px;
     width: 60%;
     background: aqua;
     float: left;
 }
 
-.items{
+.items {
     float: left;
     width: 300px;
     height: 400px;
