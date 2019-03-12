@@ -212,9 +212,19 @@ function getScore(){
     console.log('number of in-correct answer: ' + inCorrect);
     console.log('total time taken: ' + (totalTime - quiz.length)); // since questions are displayed 1sec later, we are reducing that time get accurate time taken
     console.log(quiz.length);
-    var scorePerCent = Math.round(100*(((correct*2) - inCorrect)/(quiz.length*2))) ;
+
+    var score = 100*(((correct*2) - inCorrect)/(quiz.length*2));
+    
+    var scorePerCent = Math.round() ;
 
     document.getElementById("scoreContainer").style.display = "block";
     document.getElementById("scoreContainer").style.backgroundColor = (scorePerCent >= 50) ? "green" : "red";
     document.getElementById("scoreContainer").innerHTML = "<p>"+ scorePerCent +"%</p>";
+}
+
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+  }
+  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 1.0) + "em";
 }
