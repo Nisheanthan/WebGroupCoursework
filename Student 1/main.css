@@ -2,6 +2,8 @@ body{
     /* background-color: rgb(39, 39, 39); */
     /* background-image: url("footballBackground.jpg"); */
     background-size: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 h1{
     color: aliceblue;
