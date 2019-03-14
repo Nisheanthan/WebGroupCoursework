@@ -210,7 +210,9 @@ form {
     padding: 0px;
   }
   
-  input#number {
+  
+
+  .wenumber{
     text-align: center;
     border: none;
     border-top: 1px solid #ddd;
@@ -219,6 +221,7 @@ form {
     width: 40px;
     height: 32px;
   }
+
   
   /* input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {

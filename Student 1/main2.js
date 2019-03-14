@@ -23,20 +23,21 @@ function topFunction() {
 }
 
 // Quantity Up Down 
-function increaseValue() {
-  var value = parseInt(document.getElementById('number').value, 10);
+function increaseValue(num) {
+  var txt='number'+num;
+  var value = parseInt(document.getElementById(txt).value, 10);
   value = isNaN(value) ? 0 : value;
   value++;
-  document.getElementById('number').value = value;
+  document.getElementById(txt).value = value;
+  
 }
 
-function decreaseValue() {
-  var value = parseInt(document.getElementById('number').value, 10);
+function decreaseValue(num) {
+  var txt='number'+num;
+  var value = parseInt(document.getElementById(txt).value, 10);
   value = isNaN(value) ? 0 : value;
   value < 1 ? value = 1 : '';
   value--;
-  document.getElementById('number').value = value;
+  document.getElementById(txt).value = value;
 }
-function getNumber(){
-  var value = parseInt(document.getElementById('number').value, 10);
-}
+
