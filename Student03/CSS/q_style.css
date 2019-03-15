@@ -153,11 +153,19 @@ body{
     font-weight: bold;
     text-align: center;
 }
-
-#playerKick{
+#plustext{
+    width: 30px;
+    height: 30px;
+}
+#minustext{
+    width: 30px;
+    height: 30px;
+}
+.zoomInOut{
+    /* float: right; */
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 30px;
 }
 #footer{
     color: white;

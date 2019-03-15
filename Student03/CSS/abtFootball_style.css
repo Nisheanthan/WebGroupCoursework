@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+#plustext{
+    width: 30px;
+    height: 30px;
+}
+#minustext{
+    width: 30px;
+    height: 30px;
+}
+.zoomInOut{
+    /* float: right; */
+    position: relative;
+    right: 0;
+    bottom: 30px;
+}
+#footer{
+    color: white;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+#footer a{
+    color: white;
+    text-decoration: none;
+}

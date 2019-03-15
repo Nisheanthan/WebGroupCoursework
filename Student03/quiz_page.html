@@ -8,39 +8,49 @@
 </head>
 
 <body>
-	<div id="qContainer">
-		<div id="startBtn" onclick="startQuiz()">Start Quiz!</div>
-		<div id="instruction" style="display: none"> 
-            <h1>You have 10 questions ahead.</h1>
-            <ul>
-                <li>Take 10 seconds for each question.</li>
-                <li>+2 mark for each correct answer.</li>
-                <li>-1 mark for each wrong answer.</li>
-                <li>We will report your performance once the quiz is ended.</li>
-            </ul>
-			Quiz starts in <span id="seconds">5 seconds!</span>
-		</div>
-		<div id="quiz" style="display: none">
-            <div id="qDisplay"></div>
-            <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div> <br>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div> <br>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div> <br>
+    <div id="pageContainer">
+    	<div id="qContainer">
+    		<div id="startBtn" onclick="startQuiz()">Start Quiz!</div>
+    		<div id="instruction" style="display: none"> 
+                <h1>You have 10 questions ahead.</h1>
+                <ul>
+                    <li>Take 10 seconds for each question.</li>
+                    <li>+2 mark for each correct answer.</li>
+                    <li>-1 mark for each wrong answer.</li>
+                    <li>We will report your performance once the quiz is ended.</li>
+                </ul>
+    			Quiz starts in <span id="seconds">5 seconds!</span>
+    		</div>
+    		<div id="quiz" style="display: none">
+                <div id="qDisplay"></div>
+                <div id="choices">
+                    <div class="choice" id="A" onclick="checkAnswer('A')"></div> <br>
+                    <div class="choice" id="B" onclick="checkAnswer('B')"></div> <br>
+                    <div class="choice" id="C" onclick="checkAnswer('C')"></div> <br>
+                </div>
+                <div id="timer">
+                    <div id="counter"></div>
+                    <div id="bgTimeBar"></div>
+                    <div id="timeBar"></div>
+                </div>
+                <div id="progressBar"></div>
             </div>
-            <div id="timer">
-                <div id="counter"></div>
-                <div id="bgTimeBar"></div>
-                <div id="timeBar"></div>
-            </div>
-            <div id="progressBar"></div>
-        </div>
-        <div id="scoreContainer" style="display: none"></div>
-	</div>
+            <div id="scoreContainer" style="display: none"></div>
+    	</div>
+
 
     <!-- <div id='playerKick'>
         <img src="Assets/soccer-player.jpg" alt="player_kicking_ball">
     </div> -->
-    
+    <div class="zoomInOut">
+        <div style="font-size: 10px;">
+            <img id="plustext" alt="Increase text size" src="Assets/zoomInOut/makeTextBigger.png" onclick="resizeText(1)" /> <br>
+            <img id="minustext" alt="Decrease text size" src="Assets/zoomInOut/makeTextSmaller.png" onclick="resizeText(-1)" />
+        </div>
+    </div>
+
+     </div>
+
     <div id='footer'>
         &copy;2019 Course Work - All Rights Reserved By <a href="CV_Nishean.html" target="_blank"> Nishean - w17154156 </a>
     </div>
