@@ -16,9 +16,17 @@
         <div class="grabUser">GRAB <span style="font-family:monospace">the</span> CHANCE</div>
         <img id="imgSize" alt="Display" src="images\displayimg.jpg">
 
-        <div class="bottom-right">KEEP the GOLE</div>
+        <div class="bottom-right">
+            Products:
+            <a href="#shirts-div">T-Shirts</a>
+            <a href="#boots-div">Boots</a>
+            <a href="#balls-div">FootBalls</a>
+            <a href="#gloves-div">Gloves</a>
+            <a href="#guards-div">Knee Guards</a>
+        </div>
+
     </div>
-    <div class="mainRowContainer">
+    <div class="mainRowContainer" id="shirts-div">
         <div class="hr">
             <span class="hr_text">
                 T - SHIRTs
@@ -109,10 +117,13 @@
                     </form>
                 </div>
             </div>
-            <button class="button btn">Make Purchase</button>
+            <!-- <button class="button btn">Make Purchase</button> -->
         </div>
     </div>
-    <div class="mainRowContainer">
+
+    <button onclick="topFunction()" id="scrollUpBtn" title="Go to top">Up</button>
+
+    <div class="mainRowContainer" id="boots-div">
         <div class="hr">
             <span class="hr_text">
                 BOOTs
@@ -203,15 +214,15 @@
                     </form>
                 </div>
             </div>
-            <button class="button btn">Make Purchase</button>
+            <!-- <button class="button btn">Make Purchase</button> -->
         </div>
     </div>
 
-    <button onclick="topFunction()" id="scrollUpBtn" title="Go to top">Up</button>
+    
 
     <div class="mainRowContainer">
         <div class="hr">
-            <span class="hr_text">
+            <span class="hr_text" id="balls-div">
                 FOOTBALLs
             </span>
         </div><br>
@@ -283,12 +294,12 @@
                     </form>
                 </div>
             </div>
-            <button class="button btn">Make Purchase</button>
+            <!-- <button class="button btn">Make Purchase</button> -->
         </div>
     </div>
     <div class="mainRowContainer">
         <div class="hr">
-            <span class="hr_text">
+            <span class="hr_text" id="gloves-div">
                 GLOVEs
             </span>
         </div><br>
@@ -377,12 +388,12 @@
                     </form>
                 </div>
             </div>
-            <button class="button btn">Make Purchase</button>
+            <!-- <button class="button btn">Make Purchase</button> -->
         </div>
     </div>
     <div class="mainRowContainer">
         <div class="hr">
-            <span class="hr_text">
+            <span class="hr_text" id="guards-div">
                 KNEE GUARDs
             </span>
         </div><br>
@@ -471,7 +482,7 @@
                     </form>
                 </div>
             </div>
-            <button class="button btn">Make Purchase</button>
+            <!-- <button class="button btn">Make Purchase</button> -->
         </div>
     </div>
 </body>
