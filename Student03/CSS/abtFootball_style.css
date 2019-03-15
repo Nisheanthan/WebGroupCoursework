@@ -43,6 +43,10 @@ ul{
     float: right;
 }
 
+#sideContainer h3{
+    text-align: center;
+}
+
 #helperDiv, #navContainer, #sideContainer {
     background-color: #f1f1f1;
     height: 725px;
@@ -75,6 +79,7 @@ li a {
 li a.active {
     background-color: #4CAF50;
     color: white;
+    cursor: default;
 }
 
 li a:hover:not(.active), #anchor div a:hover {
@@ -99,7 +104,7 @@ li a:hover:not(.active), #anchor div a:hover {
     position: sticky;
     top: 35px;
     background-color: white;
-    width:69%; 
+    width:70%; 
 }
 
 h2 {
@@ -153,3 +158,22 @@ h2 {
     color: white;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
