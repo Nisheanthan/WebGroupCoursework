@@ -2,29 +2,108 @@ body{
     margin: 0;
 }
 
-#plustext{
+#navContainer{
+    width: 20%;
+    height: 725px;
+    float: left;
+}
+
+#sidebartoggler { display: none; }
+
+.toggle {
+    position: absolute;
+    margin: 10px;
+    z-index: 1;
+    font-size: 30px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#pageContainer{
+    width: 56%;
+    height: 720px;
+    margin: 1px 5px;
+    float: left;
+    padding: 5px 20px 1px;
+    overflow-y: scroll;
+}
+
+.rules{
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+
+.rules::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.text{
+    float: left;
+    width:69%; 
+}
+
+#img img{
+    float: right;
+    width:30%; 
+    height: 200px;
+}
+
+#sideContainer{
+    width: 20%;
+    height: 725px;
+    float: right;
+}
+
+#plustext, #minustext{
     width: 30px;
     height: 30px;
 }
-#minustext{
-    width: 30px;
-    height: 30px;
-}
+
 .zoomInOut{
-    /* float: right; */
-    position: relative;
+    position: absolute;
     right: 0;
     bottom: 30px;
 }
 #footer{
     color: white;
     background-color: black;
-    bottom: 0;
     width: 100%;
     height: 25px;
     margin: 0;
     text-align: center;
-    position: relative;
+    clear: both;
+    /*position: relative;
+    bottom: 0;*/
 }
 
 #footer a{
