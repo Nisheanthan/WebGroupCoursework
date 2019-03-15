@@ -9,7 +9,7 @@ function resizeText(multiplier) {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
     document.getElementById("scrollUpBtn").style.display = "block";
   } else {
     document.getElementById("scrollUpBtn").style.display = "none";

@@ -15,6 +15,23 @@ body {
     cursor: pointer;
 }
 
+.panel-text{
+    text-align: center;
+    color: #fff;
+    background-size: cover !important;
+    display: grid;
+}
+.panel-text h2, p, span{
+    padding: 10px;
+}
+.left-panel div{
+    margin: 20%;
+}
+
+.right-panel div{
+    margin: 10%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -86,4 +103,11 @@ li a:hover:not(.active) {
     height: 400px;
     background: burlywood;
     margin-left: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.items img{
+    width: 100%;
+    margin-top: 27px;
 }

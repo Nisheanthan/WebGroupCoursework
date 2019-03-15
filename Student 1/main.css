@@ -1,20 +1,26 @@
 body{
     /* background-color: rgb(39, 39, 39); */
     /* background-image: url("footballBackground.jpg"); */
-    background-size: 100%;
+    /* background-size: 100%; */
     padding: 0px;
     margin: 0px;
 }
+/* Presantation Page */
 h1{
     color: aliceblue;
 }
 .name_Set{
     margin: -75px 10px 00;   
-    width: 258px; 
-    height: 340 px;  
-    /* background-color:rgb(253, 221, 221);   */
-    background-color:none; 
-    float: right;
+    width: auto; 
+    height: 90px;  
+    background-color:rgb(253, 221, 221);  
+    /* background-color:none;  */
+    float: left;
+    position: relative;
+    margin-top:25%;
+    margin-bottom:auto;
+    margin-left:15%;
+    /* padding-left: 100px; */
     /* opacity: 0.5; */
 } 
 .names{
@@ -28,12 +34,16 @@ h1{
     font-size: 25px;  
     font-weight:bold; 
     opacity: 1;
+    float: left;
 }
 .secound_name{
     color: beige;
     font-size: 18px;
     font-weight: 100;
 }
+/* Presantation Page */
+
+/* image Zoom In & Out */
 #plustext{
     width: 30px;
     height: 30px;
@@ -48,12 +58,13 @@ h1{
     right: 0;
     bottom: 0;
 }
+/* image Zoom In & Out */
 
 #imgSize{
     width: 100%; 
 }
 #displayImg{
-    width: 100%;
+    width: auto;
     height:auto;
     background-size: cover;
     /* float: left; */
@@ -61,10 +72,11 @@ h1{
     text-align: center;
     font-size: 60px;
     color: white;
+    padding: 0px;
+    margin: 0px;
 }
 
 .grabUser {
-    /* background-color: rgb(1, 46, 11); */
     background-color: rgb(78, 168, 108);
     color: white;
     font-size: 60px; 
@@ -82,12 +94,28 @@ h1{
   }
 
 .bottom-right {
-    position: absolute;
-    bottom: 8px;
+    position: sticky;
+    bottom: 20px;
     right: 16px;
-    /* border:2px;
-    border-color: black; */
+    font-size: 40px;
+    background-color: rgb(3, 99, 35);
+    /* transform: translate(-50%, -50%); */
+    mix-blend-mode: multiply;
 }
+.a:link, a:visited{
+  opacity:none;
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  font-size: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: rgb(11, 51, 3);
+}
+/* Product Names */
 .hr{
     width: 100%; 
     height: 20px; 
@@ -100,10 +128,11 @@ h1{
     background-color: white; 
     padding: 0 10px;
 }
+/* Product Names */
+
 #margin{
-    margin: 25px;
-    padding-left: 20px; 
-    
+    margin: 25px 0px 25px 25px;
+    padding-left: 20px;    
 }
 .discript {
     padding: 10px;
@@ -122,12 +151,14 @@ h1{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     float: left; 
-    margin-right: 25px;   
+    margin-right: 25px;
+    margin-left: 25px;   
 }
 .mainRowContainer{
     width: 100%;
     float: left; 
-    margin: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .button {
@@ -156,73 +187,73 @@ h1{
     color: white;
   }
 
-  #scrollUpBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: rgba(109, 101, 101, 0.623);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
+#scrollUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(109, 101, 101, 0.623);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
   
-  #scrollUpBtn:hover {
-    background-color: #555;
-  }
+#scrollUpBtn:hover {
+  background-color: #555;
+}
 /* Quantity Up Down */
 form {
-    width: 300px;
-    text-align: center;
-  }
+  width: 300px;
+  text-align: center;
+}
   
-  .value-button {
-    display: inline-block;
-    border: 1px solid #ddd;
-    margin: 0px;
-    width: 40px;
-    height: 12px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 11px 0;
-    background-color: none;
-    user-select: none;
-  }
-  
-  .value-button:hover {
-    cursor: pointer;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  form #decrease {
-    margin-right: -4px;
-  }
-  
-  form #increase {
-    margin-left: -4px;
-  }
-  
-  form #input-wrap {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 12px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background-color: none;
+  user-select: none;
+}
 
-  .wenumber{
-    text-align: center;
-    border: none;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 0px;
-    width: 40px;
-    height: 32px;
-  }
+.value-button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+}
+
+form #decrease {
+  margin-right: -4px;
+}
+
+form #increase {
+  margin-left: -4px;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.wenumber{
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 32px;
+}
 
   
   /* input[type=number]::-webkit-inner-spin-button,
