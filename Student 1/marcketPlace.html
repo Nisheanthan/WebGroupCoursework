@@ -36,9 +36,9 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\t1.jpg">
                 <div class="discript">
-                    T-50 BLUE<br>
+                    <span id="number1-name">T-50 BLUE</span><br>
                     <hr>
-                    LKR: 4200 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number1-price">4200</span> | Size:<select id="number1-size" style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -59,9 +59,9 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\t2.jpg">
                 <div class="discript">
-                    T-51 WHITE<br>
+                    <span id="number2-name">T-51 WHITE</span><br>
                     <hr>
-                    LKR: 4000 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number2-price">4000</span> | Size:<select id="number2-size" style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -81,9 +81,9 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\t3.jpg">
                 <div class="discript">
-                    T-52 YELLOW<br>
+                    <span id="number3-name">T-52 YELLOW</span><br>
                     <hr>
-                    LKR: 4200 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number3-price">4200</span> | Size:<select id="number3-size" style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -103,9 +103,9 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\t4.jpg">
                 <div class="discript">
-                    T-53 BLACK<br>
+                    <span id="number4-name">T-53 BLACK</span><br>
                     <hr>
-                    LKR: 4100 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number4-price">2100</span> | Size:<select id="number4-size" style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -122,7 +122,7 @@
                     <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
                 </div>
             </div>
-            <!-- <button class="button btn">Make Purchase</button> -->
+            <button class="button btn" onclick="makePurchase()">Make Purchase</button>
         </div>
     </div>
 
@@ -138,9 +138,9 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\shoe2.jpg">
                 <div class="discript">
-                    AK-44 BLUE<br>
+                    <span id="number5-name">AK-44 BLUE</span><br>
                     <hr>
-                    LKR: 6000 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number5-price">6000</span> | Size:<select id="number5-size" style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -160,9 +160,9 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\shoe1.jpg">
                 <div class="discript">
-                    AK-45 BLUE<br>
+                    <span id="number6-name">AK-45 BLUE</span><br>
                     <hr>
-                    LKR: 6700 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number6-price">6700</span> | Size:<select id="number6-size" style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -182,9 +182,9 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\shoe3.jpg">
                 <div class="discript">
-                    AK-46 ORANGE<br>
+                    <span id="number7-name">AK-46 ORANGE</span><br>
                     <hr>
-                    LKR: 6550 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number7-price">6550</span> | Size:<select id="number7-size" style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -204,9 +204,9 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\shoe4.jpg">
                 <div class="discript">
-                    AK-47 RED<br>
+                    <span id="number8-name">AK-47 RED</span><br>
                     <hr>
-                    LKR: 6050 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number8-price">6050</span> | Size:<select id="number8-size" style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -239,7 +239,7 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\ball1.jpg">
                 <div class="discript">
-                    CZ-74 BLUE<br>
+                    <span id="number9-name">CZ-74 BLUE</span><br>
                     <hr>
                     LKR: 3000
                     <br>
@@ -256,7 +256,8 @@
             </div>
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\ball2.jpg">
-                <div class="discript">CZ-75 WHITE<br>
+                <div class="discript">
+                    <span id="number10-name">CZ-75 WHITE</span><br>
                     <hr>
                     LKR: 3100
                     <br>
@@ -274,7 +275,7 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\ball3.jpg">
                 <div class="discript">
-                    CZ-76 BLACK<br>
+                    <span id="number11-name">CZ-76 BLACK</span><br>
                     <hr>
                     LKR: 3200
                     <br>
