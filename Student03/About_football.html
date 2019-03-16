@@ -6,146 +6,179 @@
 	<script type="text/javascript" src="JS/abtFootball_script.js"></script>
 </head>
 <body>
-	<div id="pageContainer">
-		<div>
-			<!-- navigation would come here -->
-		</div>
+	<div id="navContainer">
+		<ul id="navigation">
+			<li><a href="../index.html" onclick="selectMenuItem(this)">Home</a></li>
+			<li><a href="../Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Buy Products</a></li>
+	        <li><a href="quiz_page.html" onclick="selectMenuItem(this)">Quiz </a></li>
+			<li><a href="../Student 4/8/8.html" onclick="selectMenuItem(this)">Gallery</a></li>
+			<li><a href="details_page.html" onclick="selectMenuItem(this)">About Us</a></li>
+			<li><a href="../Student 2/comment.html" onclick="selectMenuItem(this)">Feedback</a></li>
+			<li><a href="../Student 4/6/6.html" onclick="selectMenuItem(this)">Site Map</a></li>
+			<li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+			<li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+			<br> <br>
+			More on Football
+			<li><a class="active" href="About_football.html" onclick="selectMenuItem(this)">About Football</a></li>
+			<li><a href="" onclick="selectMenuItem(this)">Football Teams</a></li>
+			<li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+			<li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+    	</ul>
+	</div>
 
+	<div id="helperDiv"> 
+		<input type="checkbox" id="helperNavToggler" onchange="showNavigation()">
+            <label class="icon" id="toggle" for="helperNavToggler">☰</label>
+	</div>
+
+	<div id="pageContainer">
 		<div id="aboutFootball">
 			<div id="history">
 				<h2> History of Football</h2>
-				<p class="p1">
-					The contemporary history of the world's favourite game spans more than 100 years. It all began in 1863 in England, when rugby football and association football branched off on their different courses and the Football Association in England was formed - becoming the sport's first governing body. 
-				</p>
+				<div>
+					<p class="p1">
+						The contemporary history of the world's favourite game spans more than 100 years. It all began in 1863 in England, when rugby football and association football branched off on their different courses and the Football Association in England was formed - becoming the sport's first governing body. 
+					</p>
 
-				<p class="p2">
-					Both codes stemmed from a common root and both have a long and intricately branched ancestral tree. A search down the centuries reveals at least half a dozen differentgames, varying to differentdegrees, and to which the historical development of football has been traced back. Whether this can be justified in some instances is disputable. Nevertheless, the fact remains that people have enjoyed kicking a ball about for thousands of years and there is absolutely no reason to consider it an aberration of the more 'natural' form of playing a ball with the hands.
-				</p>
+					<p class="p2">
+						Both codes stemmed from a common root and both have a long and intricately branched ancestral tree. A search down the centuries reveals at least half a dozen differentgames, varying to differentdegrees, and to which the historical development of football has been traced back. Whether this can be justified in some instances is disputable. Nevertheless, the fact remains that people have enjoyed kicking a ball about for thousands of years and there is absolutely no reason to consider it an aberration of the more 'natural' form of playing a ball with the hands.
+					</p>
 
-				<p class="p3">
-				 	On the contrary, apart from the need to employ the legs and feet in tough tussles for the ball, often without any laws for protection, it was recognised right at the outset that the art of controlling the ball with the feet was not easy and, as such, required no small measure of skill. The very earliest form of the game for which there is scientific evidence was an exercise from a military manual dating back to the second and third centuries BC in China.
-				</p>
+					<p class="p3">
+						On the contrary, apart from the need to employ the legs and feet in tough tussles for the ball, often without any laws for protection, it was recognised right at the outset that the art of controlling the ball with the feet was not easy and, as such, required no small measure of skill. The very earliest form of the game for which there is scientific evidence was an exercise from a military manual dating back to the second and third centuries BC in China.
+					</p>
 
-				<p class="p4">
-					This Han Dynasty forebearof footballwas called Tsu' Chu and it consisted of kicking a leather ball filled with feathers and hair through an opening, measuring only 30-40cm in width, into a small net fixed onto long bamboo canes. According to one variation of this exercise, the player was not permitted to aim at his target unimpeded,but had to use his feet, chest, back and shoulders while trying to withstand the attacks of his opponents. Use of the hands was not permitted. 
-				</p>
+					<p class="p4">
+						This Han Dynasty forebearof footballwas called Tsu' Chu and it consisted of kicking a leather ball filled with feathers and hair through an opening, measuring only 30-40cm in width, into a small net fixed onto long bamboo canes. According to one variation of this exercise, the player was not permitted to aim at his target unimpeded,but had to use his feet, chest, back and shoulders while trying to withstand the attacks of his opponents. Use of the hands was not permitted. 
+					</p>
 
-				<p class="p5">
-					Another form of the game, also originating from the Far East, was the Japanese Kemari, which began some 500-600 years later and is still played today. This is a sport lacking the competitive element of Tsu' Chu with no struggle for possession involved. Standing in a circle, the players had to pass the ball to each other, in a relatively small space, trying not to let it touch the ground.
-				</p>
+					<p class="p5">
+						Another form of the game, also originating from the Far East, was the Japanese Kemari, which began some 500-600 years later and is still played today. This is a sport lacking the competitive element of Tsu' Chu with no struggle for possession involved. Standing in a circle, the players had to pass the ball to each other, in a relatively small space, trying not to let it touch the ground.
+					</p>
 
-				<p class="p6">
-					The Greek 'Episkyros' - of which few concrete details survive - was much livelier, as was the Roman 'Harpastum'. The latter was played out with a smaller ball by two teams on a rectangular field marked by boundary lines and a centre line. The objective was to get the ball over the opposition's boundary lines and as players passed it between themselves, trickery was the order of the day. The game remained popular for 700-800 years, but, although the Romans took it to Britain with them, the use of feet was so small as to scarcely be of consequence.
-				</p>
+					<p class="p6">
+						The Greek 'Episkyros' - of which few concrete details survive - was much livelier, as was the Roman 'Harpastum'. The latter was played out with a smaller ball by two teams on a rectangular field marked by boundary lines and a centre line. The objective was to get the ball over the opposition's boundary lines and as players passed it between themselves, trickery was the order of the day. The game remained popular for 700-800 years, but, although the Romans took it to Britain with them, the use of feet was so small as to scarcely be of consequence.
+					</p>
+				</div>
 			</div>
 
-			<div id="rules">
-				<h2>Rules and Regulations </h2>
-				<div class="rule1">
-					<h3>Ball in and out of Play:</h3>
-					<div id="text">
+			<div id="rulesRegulations">
+				<h2>Rules and Regulations</h2>
+				<div id="rule1" class="rules">
+					<h3>Ball in and out of Play</h3>
+					<div class="text">
 						The soccer ball is out of bounds when it has crossed the goal line or touchline whether on the ground or in air. If it rebounds off the referee, an assistant referee, a goal post, crossbar, or corner flag post and remains inside the field, then it is still in play.
 					</div>
 					<div id="img"> 
-						<img src="">
+						<img src="Assets/rules/rule1.png">
 					</div>
 				</div>
 
-				<div class="rule2">
-					<h3>Method of scoring:</h3>
-					<div id="text">
+				<div id="rule2" class="rules">
+					<h3>Method of scoring</h3>
+					<div class="text">
 						A goal is scored in football if the ball crosses the goal line between the two goalposts and under the crossbar, as long as no violation of the rules has taken place. The side that scores the most goals wins. If both teams have the same number of goals at the end of the match, it is considered a draw even if neither of them scored a goal. 
 					</div>
 					<div id="img"> 
-						<img src="">
+						<img src="Assets/rules/rule2.jpg">
 					</div>
 				</div>
 
-				<div class="rule3">
-					<h3>Offside:</h3>
-					<div id="text">
+				<div id="rule3" class="rules">
+					<h3>Offside</h3>
+					<div class="text">
 						A player is in offside position if there are fewer than two defenders (including the goalie) between him and the goal line. A violation of the offside rule in football occurs if he is in that position and the ball is played to him. A free kick is awarded to the opposition if a player is caught offside.
 					</div>
 					<div id="img"> 
-						<img src="">
+						<img src="Assets/rules/rule3.jpg">
 					</div>
 				</div>
 
-				<div class="rule4">
-					<h3>Fouls and misconducts:</h3>
-					<div id="text">
+				<div id="rule4" class="rules">
+					<h3>Fouls and Misconducts</h3>
+					<div class="text">
 						The following are the most common fouls in football: kicking, tripping, pushing, or charging another player recklessly; striking or attempting to strike an opponent or any member of the opposing side.A foul is called if a player: makes a tackle but hits the player before the ball; deliberately handles the ball (except the goalkeeper in his proper area); or if he uses excessive force in defending an opponent.
 					</div>
 					<div id="img"> 
-						<img src="">
+						<img src="Assets/rules/rule4.png">
 					</div>
 				</div>
 
-				<div class="rule5">
-					<h3>Free kicks: </h3>
-					<div id="text">
+				<div id="rule5" class="rules">
+					<h3>Free Kicks</h3>
+					<div class="text">
 						A restarts a play after a foul or rule infringement is committed and is usually taken from the spot where the violation was committed. A free-kick can either be “direct”, in which a kicker may score directly, or “indirect”, in which another player must touch the ball before a goal can be scored.
 					</div>
 					<div id="img"> 
-						<img src="">
+						<img src="Assets/rules/rule5.jpg">
 					</div>
 				</div>
 
-				<div class="rule6">
-					<h3>Penalty kick: </h3>
-					<div id="text">
+				<div id="rule6" class="rules">
+					<h3>Penalty Kick</h3>
+					<div class="text">
 						A penalty kick in football is awarded if a defender commits a foul inside its own penalty area. The kick is taken from the penalty spot and all the players (except the kicker and the goalkeeper) must be outside the penalty area and penalty arc.
 					</div>
 					<div id="img"> 
-						<img src="">
+						<img src="Assets/rules/rule6.jpg">
 					</div>
 				</div>
 
-				<div class="rule7">
-					<h3> Throw-in:</h3>
-					<div id="text">
+				<div id="rule7" class="rules">
+					<h3> Throw-In</h3>
+					<div class="text">
 						A throw-in in football is awarded to a team if the ball goes over the touchline. It is awarded to the team opposing the side that touched the ball last. The throw is taken from the spot where the ball goes out of bounds. The taker must throw the ball with both hands, both feet on the ground, and facing the field of play. 
 					</div>
 					<div id="img"> 
-						<img src="">
+						<img src="Assets/rules/rule7.jpg">
 					</div>
 				</div>
 
-				<div class="rule8">
-					<h3>Goal kick: </h3>
-					<div id="text">
+				<div id="rule8" class="rules">
+					<h3>Goal Kick</h3>
+					<div class="text">
 						A goal-kick in football is awarded to the defending team if the opposing team causes the ball to go over the goal-line. Any player from the defending side is allowed to take the goal kick. It must be taken anywhere on the goal area and must go beyond the penalty area or it will be retaken. The ball must be touched by another player before the taker can play it again.
 					</div>
 					<div id="img"> 
-						<img src="">
 					</div>
 				</div>
 
-				<div class="rule9">
-					<h3> Corner kick: </h3>
-					<div id="text">
+				<div id="rule9" class="rules">
+					<h3> Corner Kick</h3>
+					<div class="text">
 						A corner kick in football is awarded to the attacking team if an opposing player is the last to touch the ball before it goes out of bounds on the goal-line. The attacking team resumes play by placing the ball in the corner arc nearest to where it crossed the goal line.
 					</div>
 					<div id="img"> 
-						<img src="">
+						<img src="Assets/rules/rule9.jpg">
 					</div>
 				</div>
 			</div>
 		</div>
+    </div>
 
-		<!-- <div>
-			here should be in page navigator
-		</div> -->
+
+	<div id="sideContainer">
+		<h3> What do we have for YOU here</h3>
+		<div id="anchor">
+			<div><a href="#history">History of Football</a></div>
+			<ul>Rules and Regulations
+				<li><a href="#rule1">Ball in and out of Play</a></li>
+				<li><a href="#rule2">Method of scoring</a></li>
+				<li><a href="#rule3">Offside</a></li>
+				<li><a href="#rule4">Fouls and Misconducts</a></li>
+				<li><a href="#rule5">Free Kicks</a></li>
+				<li><a href="#rule6">Penalty Kick</a></li>
+				<li><a href="#rule7">Throw-In</a></li>
+				<li><a href="#rule8">Goal Kick</a></li>
+				<li><a href="#rule9">Corner Kick</a></li>
+			</ul>
+		</div>
 	
-		
-	<div class="zoomInOut">
-        <div style="font-size: 10px;">
-            <img id="plustext" alt="Increase text size" src="Assets/zoomInOut/makeTextBigger.png" onclick="resizeText(1)" /> <br>
-            <img id="minustext" alt="Decrease text size" src="Assets/zoomInOut/makeTextSmaller.png" onclick="resizeText(-1)" />
-        </div>
-    </div>
-
-    </div>
+		<div class="zoomInOut">
+			<img id="plustext"  class="icon" alt="Increase text size" src="Assets/zoomInOut/makeTextBigger.png" onclick="resizeText(1)" /> <br>
+			<img id="minustext"  class="icon" alt="Decrease text size" src="Assets/zoomInOut/makeTextSmaller.png" onclick="resizeText(-1)" />
+	    </div>
+	</div>
 
 	<div id='footer'>
         &copy;2019 Course Work - All Rights Reserved By <a href="CV_Nishean.html" target="_blank"> Nishean - w17154156 </a>
