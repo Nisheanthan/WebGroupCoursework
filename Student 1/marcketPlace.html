@@ -26,6 +26,35 @@
         </div>
 
     </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="close()">&times;</span>
+            <div class="container">
+                <form id="form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+                    <label for="email">e-Mail</label>
+                    <input type="text" id="email" name="e-Mail" placeholder="example@example.abc">
+        
+                    <label for="number">Contact Number</label>
+                    <input type="text" id="number" name="contactNumber" placeholder="+947xxxxxxxx">
+        
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" placeholder="address.." style="height:50px"></textarea>
+        
+                    <input class="ok" type="button" onclick="formSubmit()" value="OK">
+                </form>
+            </div>
+        </div>
+    
+    </div>
     <div class="mainRowContainer" id="shirts-div">
         <div class="hr">
             <span class="hr_text">
@@ -45,7 +74,7 @@
                         <option value="size14">UK 14</option>
                     </select><br>
                     <hr>
-                    
+
                     <form>
                         <div class="value-button" id="decrease" onclick="decreaseValue(1)" value="Decrease Value"><span
                                 style="font-weight: bold">-</span></div>
@@ -53,7 +82,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(1)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
@@ -75,7 +104,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(2)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
@@ -97,7 +126,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(3)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
@@ -119,15 +148,14 @@
                         <div class="value-button" id="increase" onclick="increaseValue(4)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
-            <button class="button btn" onclick="makePurchase()">Make Purchase</button>
+            <!-- <button class="button btn" onclick="makePurchase()">Make Purchase</button> -->
         </div>
     </div>
-
     <button onclick="topFunction()" id="scrollUpBtn" title="Go to top">Up</button>
-
+    
     <div class="mainRowContainer" id="boots-div">
         <div class="hr">
             <span class="hr_text">
@@ -154,7 +182,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(5)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
@@ -176,7 +204,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(6)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
@@ -198,7 +226,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(7)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
@@ -220,14 +248,14 @@
                         <div class="value-button" id="increase" onclick="increaseValue(8)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <!-- <button class="button btn">Make Purchase</button> -->
         </div>
     </div>
 
-    
+
 
     <div class="mainRowContainer">
         <div class="hr">
@@ -241,7 +269,7 @@
                 <div class="discript">
                     <span id="number9-name">CZ-74 BLUE</span><br>
                     <hr>
-                    LKR: 3000
+                    LKR: <span id="number9-price">3000</span>
                     <br>
                     <hr>
                     <form>
@@ -251,7 +279,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(9)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
@@ -259,7 +287,7 @@
                 <div class="discript">
                     <span id="number10-name">CZ-75 WHITE</span><br>
                     <hr>
-                    LKR: 3100
+                    LKR: <span id="number10-price">3100</span>
                     <br>
                     <hr>
                     <form>
@@ -269,7 +297,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(10)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
@@ -277,7 +305,7 @@
                 <div class="discript">
                     <span id="number11-name">CZ-76 BLACK</span><br>
                     <hr>
-                    LKR: 3200
+                    LKR: <span id="number11-price">3200</span>
                     <br>
                     <hr>
                     <form>
@@ -287,15 +315,15 @@
                         <div class="value-button" id="increase" onclick="increaseValue(11)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\ball4.jpg">
                 <div class="discript">
-                    CZ-77 RED<br>
+                    <span id="number12-name">CZ-77 RED</span><br>
                     <hr>
-                    LKR: 3300
+                    LKR: <span id="number12-price">3300</span>
                     <br>
                     <hr>
                     <form>
@@ -305,7 +333,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(12)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <!-- <button class="button btn">Make Purchase</button> -->
@@ -321,9 +349,10 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\gl1.jpg">
                 <div class="discript">
-                    MK-84 BLUE<br>
+                    <span id="number13-name">MK-84 BLUE</span><br>
                     <hr>
-                    LKR: 2500 | Size:<select style="cursor: pointer;">
+                    LKR:<span id="number13-price"> 2500</span> | Size:<select id="number13-size"
+                        style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -337,15 +366,16 @@
                         <div class="value-button" id="increase" onclick="increaseValue(13)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\gl2.jpg">
                 <div class="discript">
-                    MK-85 WHITE<br>
+                    <span id="number14-name">MK-85 WHITE</span><br>
                     <hr>
-                    LKR: 2600 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number14-price">2600</span> | Size:<select id="number14-size"
+                        style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -359,15 +389,16 @@
                         <div class="value-button" id="increase" onclick="increaseValue(14)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\gl3.jpg">
                 <div class="discript">
-                    MK-86 BLACK<br>
+                    <span id="number15-name">MK-86 BLACK</span><br>
                     <hr>
-                    LKR: 2750 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number15-price">2750</span> | Size:<select id="number15-size"
+                        style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -381,15 +412,16 @@
                         <div class="value-button" id="increase" onclick="increaseValue(15)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\gl4.jpg">
                 <div class="discript">
-                    MK-87 RED<br>
+                    <span id="number16-name">MK-87 RED</span><br>
                     <hr>
-                    LKR: 2900 | Size:<select style="cursor: pointer;">
+                    LKR:<span id="number16-price"> 2900</span> | Size:<select id="number16-size"
+                        style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -403,7 +435,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue(16)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <!-- <button class="button btn">Make Purchase</button> -->
@@ -419,9 +451,10 @@
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\knee1.jpg">
                 <div class="discript">
-                    M-16 BLUE<br>
+                    <span id="number17-name">M-16 BLUE</span><br>
                     <hr>
-                    LKR: 5000 | Size:<select style="cursor: pointer;">
+                    LKR:<span id="number17-price"> 5000</span> | Size:<select id="number117-size"
+                        style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -435,15 +468,16 @@
                         <div class="value-button" id="increase" onclick="increaseValue(17)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\knee2.jpg">
                 <div class="discript">
-                    M-17 WHITE<br>
+                    <span id="number18-name">M-17 WHITE</span><br>
                     <hr>
-                    LKR: 5099 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number18-price">5099</span> | Size:<select id="number18-size"
+                        style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -457,15 +491,16 @@
                         <div class="value-button" id="increase" onclick="increaseValue(18)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\knee3.jpg">
                 <div class="discript">
-                    M-18 BLACK<br>
+                    <span id="number19-name">M-18 BLACK</span><br>
                     <hr>
-                    LKR: 5199 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number19-price">5199</span> | Size:<select id="number19-size"
+                        style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -479,15 +514,16 @@
                         <div class="value-button" id="increase" onclick="increaseValue(19)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <div class="polaroid">
                 <img id="imgSize" alt="Tshirt" src="images\knee4.jpg">
                 <div class="discript">
-                    M-19 MATBLACK<br>
+                    <span id="number20-name">M-19 MATBLACK</span><br>
                     <hr>
-                    LKR: 7000 | Size:<select style="cursor: pointer;">
+                    LKR: <span id="number20-price">7000</span> | Size:<select id="number20-size"
+                        style="cursor: pointer;">
                         <option value="size8">UK 8</option>
                         <option value="size10">UK 10</option>
                         <option value="size12">UK 12</option>
@@ -501,10 +537,13 @@
                         <div class="value-button" id="increase" onclick="increaseValue(20)" value="Increase Value"><span
                                 style="font-weight: bold">+</span></div>
                     </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
+
                 </div>
             </div>
             <!-- <button class="button btn">Make Purchase</button> -->
+            <div class="perchasebtn">
+            <button class="button btn" onclick="makePurchase()">Make Purchase</button>
+    </div>
         </div>
     </div>
 </body>

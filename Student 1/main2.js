@@ -42,6 +42,10 @@ function decreaseValue(num) {
 }
 
 function makePurchase() {
+  if(validationForm()){
+    document.getElementById("myModal").style.display = "block";
+    return;
+  }
   var message = "";
   var total = 0;
   for (let index = 0; index < 8; index++) {
@@ -61,3 +65,56 @@ function makePurchase() {
   }
 }
 
+function validationForm(){
+  var errorMessage = "";
+  var fname = document.getElementById("fname").value;
+  if(fname == ''){
+    errorMessage += "first name is required\n";
+  }
+  var lname = document.getElementById("lname").value;
+  if(lname == ''){
+    errorMessage += "last name is required\n";
+  }
+  var email = document.getElementById("email").value;
+  var regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if(email == ''){
+    errorMessage += "email is required\n";
+  } else if(!regexEmail.test(String(email).toLowerCase())){
+    errorMessage += "enter a valid email\n";
+  }
+  var tel = document.getElementById("number").value;
+  var phonenoRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  if(tel == ''){
+    errorMessage += "telephone is required\n";
+  } else if(!phonenoRegex.test(tel)){
+    errorMessage += "enter a valid telephone number\n";
+  }
+  var address = document.getElementById("address").value;
+  if(address == ''){
+    errorMessage += "address is required\n";
+  }
+  if(errorMessage)
+    alert(errorMessage);
+  return errorMessage.trim() != "";
+}
+// popup
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "block";
+}
+// popup
+
+function formSubmit() {
+  if (validationForm()){
+    return;
+  }
+  document.getElementById("myModal").style.display = "none";
+}
+function close(){
+  document.getElementById("myModal").style.display = "none";
+}
