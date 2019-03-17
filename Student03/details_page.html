@@ -1,20 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head> 
 	<title>Player Details</title>
 	<meta charset="UTF-8">
 
-	<link href="CSS/d_style.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../SharedComponents/CommonCSS/breadCrumbs.css">
+    <link rel="stylesheet" type="text/css" href="../navigation.css"/>
+	<link rel="stylesheet" type="text/css" href="../SharedComponents/CommonCSS/breadCrumbs.css">
+	<link rel="stylesheet" type="text/css" href="CSS/d_style.css">
 	<script type="text/javascript" src="JS/d_script.js"></script>
-
 </head>
 
 <body>
-	<ul class="breadcrumb">
-      <li><a href="../index.html">Home</a></li>
-      <li>About Us</li>
-    </ul>
+	<div id="navigation">
+		<ul id="navigation">
+				<li><a href="../index.html" onclick="selectMenuItem(this)">Home</a></li>
+				<li><a href="../Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Store</a></li>
+				<li><a href="quiz_page.html" onclick="selectMenuItem(this)">Quiz</a></li>
+				<li><a href="../Student 4/8/8.html" onclick="selectMenuItem(this)">Gallery</a></li>
+				<li><a class="active">About Us</a></li>
+				<li><a href="../Student 2/comment.html" onclick="selectMenuItem(this)">Feedback</a></li>
+				<li><a href="../Student 4/6/6.html" onclick="selectMenuItem(this)">Site Map</a></li>
+				<br> <br>
+				More on Football
+				<li><a href="../Student03/About_football.html" onclick="selectMenuItem(this)">About Football</a></li>
+				<li><a href="" onclick="selectMenuItem(this)">Football Teams</a></li>
+				<li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+				<li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+		</ul>
+	</div>
+
+	<div id="breadcrumb">
+		<ul class="breadcrumb">
+			<li><a href="../index.html">Home</a></li>
+			<li>About Us</li>
+		</ul>
+	</div>
 
 	<div class='player' id='chiran' onmouseover="showDescription(this.id)" onmouseout="noDescription()">
  		<img src="Assets/developers/Chiran.jpg" alt="Chiran_pic"> 

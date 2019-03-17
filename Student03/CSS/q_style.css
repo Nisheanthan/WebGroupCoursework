@@ -1,16 +1,18 @@
 body {
     margin: 0px !important;
 }
-
-
+/* div{
+	position: absolute;	
+} */
 #qContainer{
-    margin : 40px auto;
     background-color: white;
     height: 300px;
     width : 700px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px black; /* box shadow takes default color of content but safari requires color to display shadow */
     position: relative;
+    left: 400px;
+    top: 100px;
 }
 
 #startBtn{
@@ -129,7 +131,6 @@ body {
     margin-right : 5px;
 }
 #scoreContainer{
-    margin : 20px auto;
     background-color: white;
     opacity: 0.8;
     height: 300px;
@@ -165,10 +166,11 @@ body {
     position: absolute;
     right: 0;
     bottom: 30px;
+    /* top: 300px; */
 }
 #footer{
     color: white;
-    background-color: black;
+    background-color: #05240B;
     bottom: 0;
     width: 100%;
     height: 25px;
