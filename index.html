@@ -4,24 +4,22 @@
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="navigation.css" />
 </head>
 
 <body>
     <ul id="navigation">
-        <li><a class="active" href="#Student 4/8/8.html" onclick="selectMenuItem(this)">Home</a></li>
-        <li><a href="#Student 2/Hello.html" onclick="selectMenuItem(this)">News</a></li>
-        <li><a href="#Student 4/6/6.html" onclick="selectMenuItem(this)">Contact</a></li>
-        <li><a href="#Student03/quiz_page.html" onclick="selectMenuItem(this)">About</a></li>
-        <li><a href="Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Buy Product</a></li>
+        <li><a class="active" href="index.html" onclick="selectMenuItem(this)">Home</a></li>
+        <li><a href="Student03/quiz_page.html" onclick="selectMenuItem(this)">Quiz</a></li>
+        <li><a href="Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Store</a></li>
+        <li><a href="Student 2/comment.html" onclick="selectMenuItem(this)">Feedback</a></li>
     </ul>
     <div id="container">
         <div>
-            <input type="checkbox" id="sidebartoggler" onchange="showNavigation()">
-            <label class="toggle" for="sidebartoggler">☰</label>
-            <h1 class="main-heading">Playful</h1>
+            <h1 class="grabUser"><span>Football</span><span style="color: brown">Corner</span>
+            </h1>
             <h2 class="caption">Rugby Gives Confidence And A bit-More</h2>
-            <img class="main-image"
-                src="https://demo.w3layouts.com/demos_new/template_demo/30-07-2018/playful-demo_Free/1520476510/web/images/b1.jpg">
+            <img class="main-image" src="https://wallpapercave.com/wp/tDC7XsH.jpg">
         </div>
 
         <div>
@@ -105,15 +103,6 @@
 
 
     </div>
-
-    <script>
-        showNavigation();
-        function showNavigation() {
-            var value = document.getElementById("sidebartoggler").checked;
-            document.getElementById("navigation").style.display = value ? "none" : "block";
-            document.getElementById("container").style.marginLeft = value ? "0px" : "200px";
-        }
-    </script>
 </body>
 
 </html>

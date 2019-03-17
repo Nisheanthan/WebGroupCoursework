@@ -111,17 +111,15 @@ h1{
 .perchasebtn{
   position: sticky;
 }
-.a:link, a:visited{
+.product a:link, a:visited{
   opacity:none;
-  background-color: #f44336;
   color: white;
   padding: 14px 25px;
   text-align: center;
-  font-size: 10px;
   text-decoration: none;
   display: inline-block;
 }
-a:hover, a:active {
+.product a:hover, a:active {
   background-color: rgb(11, 51, 3);
 }
 /* Product Names */
@@ -294,10 +292,8 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
-  margin: 10px;
+  margin-top: 30px;
   padding: 5px;
-  width: 300px;
 }
 /* popup */
 .modal {
@@ -315,9 +311,9 @@ input[type=submit]:hover {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #ffffff54;
   margin: 4% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #888;
   width: 25%; /* Could be more or less, depending on screen size */
 }
@@ -326,7 +322,7 @@ input[type=submit]:hover {
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 15px;
   font-weight: bold;
 }
 
