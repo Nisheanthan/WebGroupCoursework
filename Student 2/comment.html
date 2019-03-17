@@ -4,38 +4,50 @@
 <head>
     <title>FeedBack Sheet</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" href="../navigation.css">
 </head>
 
 <body>
-    <div class="form-container">
-        <form>
-            <div class="input-section error-box" id="error-box">
-                This is an error
-            </div>
-            <div class="input-section">
-                <label for="username">Name:</label><input name="username" id="username" type="text">
-            </div>
-            <div class="input-section">
-                <label for="useremail">Email:</label><input name="useremail" id="useremail" type="email">
-            </div>
-            <div class="input-section">
-                <label for="usercomment">Comment:</label><textarea name="usercomment" id="usercomment" cols="30"
-                    rows="10" style="resize: none;"></textarea>
-            </div>
-            <div class="input-section">
-                <label for="usercomment">Rating:</label>
-                <div class="rating">
-                    <label><input name="stars" type="radio" value="1">★</label>
-                    <label><input name="stars" type="radio" value="2">★</label>
-                    <label><input name="stars" type="radio" value="3">★</label>
-                    <label><input name="stars" type="radio" value="4">★</label>
-                    <label><input name="stars" type="radio" value="5">★</label>
+    <ul id="navigation">
+        <li><a href="../index.html" onclick="selectMenuItem(this)">Home</a></li>
+        <li><a href="../Student03/quiz_page.html" onclick="selectMenuItem(this)">Quiz</a></li>
+        <li><a href="../Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Store</a></li>
+        <li><a  class="active" href="../Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Feedback</a></li>
+    </ul>
+    <div id="container">
+        <div class="header">
+            We value your feedback
+        </div>
+        <div class="form-container">
+            <form>
+                <div class="input-section error-box" id="error-box">
+                    This is an error
                 </div>
-            </div>
-            <input type="button" class="submit-button" onclick="showModal(true)" value="Submit">
-        </form>
-    </div>
+                <div class="input-section">
+                    <label for="username">Name:</label><input name="username" id="username" type="text">
+                </div>
+                <div class="input-section">
+                    <label for="useremail">Email:</label><input name="useremail" id="useremail" type="email">
+                </div>
+                <div class="input-section">
+                    <label for="usercomment">Comment:</label><textarea name="usercomment" id="usercomment" cols="30"
+                        rows="10" style="resize: none;"></textarea>
+                </div>
+                <div class="input-section">
+                    <label for="usercomment">Rating:</label>
+                    <div class="rating">
+                        <label><input name="stars" type="radio" value="1">★</label>
+                        <label><input name="stars" type="radio" value="2">★</label>
+                        <label><input name="stars" type="radio" value="3">★</label>
+                        <label><input name="stars" type="radio" value="4">★</label>
+                        <label><input name="stars" type="radio" value="5">★</label>
+                    </div>
+                </div>
+                <input type="button" class="submit-button" onclick="showModal(true)" value="Submit">
+            </form>
+        </div>
 
+    </div>
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
@@ -118,11 +130,11 @@
             var errorMessageElement = document.getElementById("error-box")
             errorMessageElement.style.display = errorMessage ? "block" : "none";
             errorMessageElement.innerText = errorMessage;
-            if(!element)
+            if (!element)
                 return;
-            if(errorMessage){
+            if (errorMessage) {
                 element.classList.add("input-error");
-            } else{
+            } else {
                 element.classList.remove("input-error");
             }
         }

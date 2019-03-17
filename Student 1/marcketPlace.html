@@ -7,484 +7,560 @@
     <title>Marcket Place</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../navigation.css" />
     <script src="main2.js"></script>
 </head>
 
 <body>
-    <div id="displayImg">
+    <ul id="navigation">
+        <li><a href="../index.html" onclick="selectMenuItem(this)">Home</a></li>
+        <li><a href="../Student03/quiz_page.html" onclick="selectMenuItem(this)">Quiz</a></li>
+        <li><a class="active" href="../Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Store</a></li>
+        <li><a href="../Student 2/comment.html" onclick="selectMenuItem(this)">Feedback</a></li>
+    </ul>
+    <div id="container">
+        <div id="displayImg">
 
-        <div class="grabUser">GRAB <span style="font-family:monospace">the</span> CHANCE</div>
-        <img id="imgSize" alt="Display" src="images\displayimg.jpg">
+            <div class="grabUser">GRAB <span style="font-family:monospace">the</span> CHANCE</div>
+            <img id="imgSize" alt="Display" src="images\displayimg.jpg">
 
-        <div class="bottom-right">
-            Products:
-            <a href="#shirts-div">T-Shirts |</a>
-            <a href="#boots-div">Boots |</a>
-            <a href="#balls-div">FootBalls |</a>
-            <a href="#gloves-div">Gloves |</a>
-            <a href="#guards-div">Knee Guards</a>
+            <div class="bottom-right product">
+                Products:
+                <a href="#shirts-div">T-Shirts</a>
+                <a href="#boots-div">Boots</a>
+                <a href="#balls-div">FootBalls</a>
+                <a href="#gloves-div">Gloves</a>
+                <a href="#guards-div">Knee Guards</a>
+            </div>
+
         </div>
 
-    </div>
-    <div class="mainRowContainer" id="shirts-div">
-        <div class="hr">
-            <span class="hr_text">
-                T - SHIRTs
-            </span>
-        </div><br>
-        <div id="margin">
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\t1.jpg">
-                <div class="discript">
-                    T-50 BLUE<br>
-                    <hr>
-                    LKR: 4200 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    
-                    <form style="float:left">
-                        <div class="value-button" id="decrease" onclick="decreaseValue(1)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number1" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(1)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                    <img class="addIcon" alt="Add to cart" src="images\add.png" onclick="">
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\t2.jpg">
-                <div class="discript">
-                    T-51 WHITE<br>
-                    <hr>
-                    LKR: 4000 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(2)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number2" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(2)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\t3.jpg">
-                <div class="discript">
-                    T-52 YELLOW<br>
-                    <hr>
-                    LKR: 4200 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(3)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number3" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(3)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\t4.jpg">
-                <div class="discript">
-                    T-53 BLACK<br>
-                    <hr>
-                    LKR: 4100 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(4)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number4" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(4)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <!-- <button class="button btn">Make Purchase</button> -->
-        </div>
-    </div>
+        <div id="myModal" class="modal">
 
-    <button onclick="topFunction()" id="scrollUpBtn" title="Go to top">Up</button>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <button class="close" onclick="closeForm();">&times;</button>
+                <div class="container">
+                    <form id="form">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
 
-    <div class="mainRowContainer" id="boots-div">
-        <div class="hr">
-            <span class="hr_text">
-                BOOTs
-            </span>
-        </div><br>
-        <div id="margin">
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\shoe2.jpg">
-                <div class="discript">
-                    AK-44 BLUE<br>
-                    <hr>
-                    LKR: 6000 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(5)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number5" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(5)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\shoe1.jpg">
-                <div class="discript">
-                    AK-45 BLUE<br>
-                    <hr>
-                    LKR: 6700 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(6)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number6" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(6)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\shoe3.jpg">
-                <div class="discript">
-                    AK-46 ORANGE<br>
-                    <hr>
-                    LKR: 6550 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(7)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number7" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(7)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\shoe4.jpg">
-                <div class="discript">
-                    AK-47 RED<br>
-                    <hr>
-                    LKR: 6050 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(8)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number8" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(8)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <!-- <button class="button btn">Make Purchase</button> -->
-        </div>
-    </div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    
+                        <label for="email">e-Mail</label>
+                        <input type="text" id="email" name="e-Mail" placeholder="example@example.com">
 
-    <div class="mainRowContainer">
-        <div class="hr">
-            <span class="hr_text" id="balls-div">
-                FOOTBALLs
-            </span>
-        </div><br>
-        <div id="margin">
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\ball1.jpg">
-                <div class="discript">
-                    CZ-74 BLUE<br>
-                    <hr>
-                    LKR: 3000
-                    <br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(9)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number9" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(9)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
+                        <label for="number">Contact Number</label>
+                        <input type="text" id="number" name="contactNumber" placeholder="07xxxxxxxx">
+
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" placeholder="No3, Flower Road, Colombo." style="height:50px"></textarea>
+
+                        <input class="ok" type="button" onclick="formSubmit()" value="OK">
                     </form>
                 </div>
             </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\ball2.jpg">
-                <div class="discript">CZ-75 WHITE<br>
-                    <hr>
-                    LKR: 3100
-                    <br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(10)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number10" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(10)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\ball3.jpg">
-                <div class="discript">
-                    CZ-76 BLACK<br>
-                    <hr>
-                    LKR: 3200
-                    <br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(11)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number11" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(11)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\ball4.jpg">
-                <div class="discript">
-                    CZ-77 RED<br>
-                    <hr>
-                    LKR: 3300
-                    <br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(12)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number12" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(12)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <!-- <button class="button btn">Make Purchase</button> -->
+
         </div>
-    </div>
-    <div class="mainRowContainer">
-        <div class="hr">
-            <span class="hr_text" id="gloves-div">
-                GLOVEs
-            </span>
-        </div><br>
-        <div id="margin">
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\gl1.jpg">
-                <div class="discript">
-                    MK-84 BLUE<br>
-                    <hr>
-                    LKR: 2500 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(13)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number13" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(13)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
+        <div class="mainRowContainer" id="shirts-div">
+            <div class="hr">
+                <span class="hr_text">
+                    T - SHIRTs
+                </span>
+            </div><br>
+            <div id="margin">
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\t1.jpg">
+                    <div class="discript">
+                        <span id="number1-name">T-50 BLUE</span><br>
+                        <hr>
+                        LKR: <span id="number1-price">4200</span> | Size:<select id="number1-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(1)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number1" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(1)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
                 </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\gl2.jpg">
-                <div class="discript">
-                    MK-85 WHITE<br>
-                    <hr>
-                    LKR: 2600 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(14)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number14" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(14)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\t2.jpg">
+                    <div class="discript">
+                        <span id="number2-name">T-51 WHITE</span><br>
+                        <hr>
+                        LKR: <span id="number2-price">4000</span> | Size:<select id="number2-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(2)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number2" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(2)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
                 </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\gl3.jpg">
-                <div class="discript">
-                    MK-86 BLACK<br>
-                    <hr>
-                    LKR: 2750 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(15)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number15" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(15)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\t3.jpg">
+                    <div class="discript">
+                        <span id="number3-name">T-52 YELLOW</span><br>
+                        <hr>
+                        LKR: <span id="number3-price">4200</span> | Size:<select id="number3-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(3)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number3" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(3)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
                 </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\gl4.jpg">
-                <div class="discript">
-                    MK-87 RED<br>
-                    <hr>
-                    LKR: 2900 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(16)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number16" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(16)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\t4.jpg">
+                    <div class="discript">
+                        <span id="number4-name">T-53 BLACK</span><br>
+                        <hr>
+                        LKR: <span id="number4-price">2100</span> | Size:<select id="number4-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(4)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number4" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(4)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
                 </div>
+                <!-- <button class="button btn" onclick="makePurchase()">Make Purchase</button> -->
             </div>
-            <!-- <button class="button btn">Make Purchase</button> -->
         </div>
-    </div>
-    <div class="mainRowContainer">
-        <div class="hr">
-            <span class="hr_text" id="guards-div">
-                KNEE GUARDs
-            </span>
-        </div><br>
-        <div id="margin">
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\knee1.jpg">
-                <div class="discript">
-                    M-16 BLUE<br>
-                    <hr>
-                    LKR: 5000 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(17)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number17" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(17)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
+        <button onclick="topFunction()" id="scrollUpBtn" title="Go to top">Up</button>
+
+        <div class="mainRowContainer" id="boots-div">
+            <div class="hr">
+                <span class="hr_text">
+                    BOOTs
+                </span>
+            </div><br>
+            <div id="margin">
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\shoe2.jpg">
+                    <div class="discript">
+                        <span id="number5-name">AK-44 BLUE</span><br>
+                        <hr>
+                        LKR: <span id="number5-price">6000</span> | Size:<select id="number5-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(5)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number5" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(5)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\shoe1.jpg">
+                    <div class="discript">
+                        <span id="number6-name">AK-45 BLUE</span><br>
+                        <hr>
+                        LKR: <span id="number6-price">6700</span> | Size:<select id="number6-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(6)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number6" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(6)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\shoe3.jpg">
+                    <div class="discript">
+                        <span id="number7-name">AK-46 ORANGE</span><br>
+                        <hr>
+                        LKR: <span id="number7-price">6550</span> | Size:<select id="number7-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(7)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number7" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(7)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\shoe4.jpg">
+                    <div class="discript">
+                        <span id="number8-name">AK-47 RED</span><br>
+                        <hr>
+                        LKR: <span id="number8-price">6050</span> | Size:<select id="number8-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(8)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number8" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(8)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- <button class="button btn">Make Purchase</button> -->
+            </div>
+        </div>
+
+
+
+        <div class="mainRowContainer">
+            <div class="hr">
+                <span class="hr_text" id="balls-div">
+                    FOOTBALLs
+                </span>
+            </div><br>
+            <div id="margin">
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\ball1.jpg">
+                    <div class="discript">
+                        <span id="number9-name">CZ-74 BLUE</span><br>
+                        <hr>
+                        LKR: <span id="number9-price">3000</span>
+                        <br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(9)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number9" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(9)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\ball2.jpg">
+                    <div class="discript">
+                        <span id="number10-name">CZ-75 WHITE</span><br>
+                        <hr>
+                        LKR: <span id="number10-price">3100</span>
+                        <br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(10)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number10" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(10)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\ball3.jpg">
+                    <div class="discript">
+                        <span id="number11-name">CZ-76 BLACK</span><br>
+                        <hr>
+                        LKR: <span id="number11-price">3200</span>
+                        <br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(11)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number11" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(11)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\ball4.jpg">
+                    <div class="discript">
+                        <span id="number12-name">CZ-77 RED</span><br>
+                        <hr>
+                        LKR: <span id="number12-price">3300</span>
+                        <br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(12)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number12" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(12)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- <button class="button btn">Make Purchase</button> -->
+            </div>
+        </div>
+        <div class="mainRowContainer">
+            <div class="hr">
+                <span class="hr_text" id="gloves-div">
+                    GLOVEs
+                </span>
+            </div><br>
+            <div id="margin">
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\gl1.jpg">
+                    <div class="discript">
+                        <span id="number13-name">MK-84 BLUE</span><br>
+                        <hr>
+                        LKR:<span id="number13-price"> 2500</span> | Size:<select id="number13-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(13)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number13" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(13)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\gl2.jpg">
+                    <div class="discript">
+                        <span id="number14-name">MK-85 WHITE</span><br>
+                        <hr>
+                        LKR: <span id="number14-price">2600</span> | Size:<select id="number14-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(14)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number14" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(14)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\gl3.jpg">
+                    <div class="discript">
+                        <span id="number15-name">MK-86 BLACK</span><br>
+                        <hr>
+                        LKR: <span id="number15-price">2750</span> | Size:<select id="number15-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(15)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number15" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(15)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\gl4.jpg">
+                    <div class="discript">
+                        <span id="number16-name">MK-87 RED</span><br>
+                        <hr>
+                        LKR:<span id="number16-price"> 2900</span> | Size:<select id="number16-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(16)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number16" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(16)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- <button class="button btn">Make Purchase</button> -->
+            </div>
+        </div>
+        <div class="mainRowContainer">
+            <div class="hr">
+                <span class="hr_text" id="guards-div">
+                    KNEE GUARDs
+                </span>
+            </div><br>
+            <div id="margin">
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\knee1.jpg">
+                    <div class="discript">
+                        <span id="number17-name">M-16 BLUE</span><br>
+                        <hr>
+                        LKR:<span id="number17-price"> 5000</span> | Size:<select id="number117-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(17)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number17" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(17)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\knee2.jpg">
+                    <div class="discript">
+                        <span id="number18-name">M-17 WHITE</span><br>
+                        <hr>
+                        LKR: <span id="number18-price">5099</span> | Size:<select id="number18-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(18)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number18" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(18)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\knee3.jpg">
+                    <div class="discript">
+                        <span id="number19-name">M-18 BLACK</span><br>
+                        <hr>
+                        LKR: <span id="number19-price">5199</span> | Size:<select id="number19-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(19)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number19" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(19)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img id="imgSize" alt="Tshirt" src="images\knee4.jpg">
+                    <div class="discript">
+                        <span id="number20-name">M-19 MATBLACK</span><br>
+                        <hr>
+                        LKR: <span id="number20-price">7000</span> | Size:<select id="number20-size"
+                            style="cursor: pointer;">
+                            <option value="size8">UK 8</option>
+                            <option value="size10">UK 10</option>
+                            <option value="size12">UK 12</option>
+                            <option value="size14">UK 14</option>
+                        </select><br>
+                        <hr>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue(20)" value="Decrease Value">
+                                <span style="font-weight: bold">-</span></div>
+                            <input type="number" id="number20" class="wenumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue(20)" value="Increase Value">
+                                <span style="font-weight: bold">+</span></div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- <button class="button btn">Make Purchase</button> -->
+                <div class="perchasebtn">
+                    <button class="button btn" onclick="makePurchase()">Make Purchase</button>
                 </div>
             </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\knee2.jpg">
-                <div class="discript">
-                    M-17 WHITE<br>
-                    <hr>
-                    LKR: 5099 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(18)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number18" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(18)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\knee3.jpg">
-                <div class="discript">
-                    M-18 BLACK<br>
-                    <hr>
-                    LKR: 5199 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(19)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number19" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(19)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <div class="polaroid">
-                <img id="imgSize" alt="Tshirt" src="images\knee4.jpg">
-                <div class="discript">
-                    M-19 MATBLACK<br>
-                    <hr>
-                    LKR: 7000 | Size:<select style="cursor: pointer;">
-                        <option value="size8">UK 8</option>
-                        <option value="size10">UK 10</option>
-                        <option value="size12">UK 12</option>
-                        <option value="size14">UK 14</option>
-                    </select><br>
-                    <hr>
-                    <form>
-                        <div class="value-button" id="decrease" onclick="decreaseValue(20)" value="Decrease Value"><span
-                                style="font-weight: bold">-</span></div>
-                        <input type="number" id="number20" class="wenumber" value="0" />
-                        <div class="value-button" id="increase" onclick="increaseValue(20)" value="Increase Value"><span
-                                style="font-weight: bold">+</span></div>
-                    </form>
-                </div>
-            </div>
-            <!-- <button class="button btn">Make Purchase</button> -->
         </div>
     </div>
 </body>
