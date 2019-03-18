@@ -2,34 +2,6 @@ body{
     margin: 0;
     counter-reset: rules rulesNav;
 }
-/* 
-
-.icon{
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
-    cursor: pointer;
-} */
-
-/* #helperDiv{
-    width: 3%;
-    left: 200px;
-}
-
-#helperNavToggler {
-    display: none;
- }
-
-#toggle {
-    position: absolute;
-    margin: 10px;
-    z-index: 1;
-}
-
-#breadcrumb{
-    left: 230px;
-    width: 200px;
-} */
 
 #sideContainer{
     width: 200px;
