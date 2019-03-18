@@ -3,7 +3,9 @@ body{
     /* font-size: 18px; ***other pages follow default size*** */
 }
 svg {
-    width: 100%;
+    position: absolute;
+    left:200px;
+    width: 1000px;
     height: 1000px;
 }
 
@@ -28,7 +30,7 @@ svg line {
     bottom: 0px;
     margin: 0px;
     padding: 0px;
-    position: absolute;
+    position: fixed;
     width: 100%;
 }
 
