@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Quiz</title>
-    <link rel="stylesheet" type="text/css" href="CSS/q_style.css">
-    <link rel="stylesheet" type="text/css" href="../navigation.css">
-    <script type="text/javascript" src="JS/q_script.js"></script>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="../SharedComponents/CommonCSS/breadCrumbs.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/q_style.css"/>
+	<script type="text/javascript" src="JS/q_script.js"> </script>
 </head>
 
 <body>
-    <ul id="navigation">
-        <li><a href="../index.html" onclick="selectMenuItem(this)">Home</a></li>
-        <li><a class="active" href="../Student03/quiz_page.html" onclick="selectMenuItem(this)">Quiz</a></li>
-        <li><a href="../Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Store</a></li>
-        <li><a href="../Student 2/comment.html" onclick="selectMenuItem(this)">Feedback</a></li>
-    </ul>
-    <div id="container">
-        <div id="pageContainer">
-            <div id="qContainer">
-                <div id="startBtn" onclick="startQuiz()">Start Quiz!</div>
-                <div id="instruction" style="display: none">
-                    <h1>You have 10 questions ahead.</h1>
-                    <ul>
-                        <li>Take 10 seconds for each question.</li>
-                        <li>+2 mark for each correct answer.</li>
-                        <li>-1 mark for each wrong answer.</li>
-                        <li>We will report your performance once the quiz is ended.</li>
-                    </ul>
-                    Quiz starts in <span id="seconds">5 seconds!</span>
+    <div id="navigation">
+        <ul id="navigation">
+                <li><a href="../index.html" onclick="selectMenuItem(this)">Home</a></li>
+                <li><a href="../Student 1/marcketPlace.html" onclick="selectMenuItem(this)">Store</a></li>
+                <li><a class="active">Quiz</a></li>
+                <li><a href="../Student 4/8/8.html" onclick="selectMenuItem(this)">Gallery</a></li>
+                <li><a href="../Student03/details_page.html" onclick="selectMenuItem(this)">About Us</a></li>
+                <li><a href="../Student 2/comment.html" onclick="selectMenuItem(this)">Feedback</a></li>
+                <li><a href="../Student 4/6/6.html" onclick="selectMenuItem(this)">Site Map</a></li>
+                <br> <br>
+                More on Football
+                <li><a href="../Student03/About_football.html" onclick="selectMenuItem(this)">About Football</a></li>
+                <li><a href="" onclick="selectMenuItem(this)">Football Teams</a></li>
+                <li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+                <li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+        </ul>
+    </div>
+
+    <div id="breadcrumb">
+        <p class="breadcrumb">
+            <span>
+                <a href="../index.html">
+                    Home
+                </a>
+            </span>
+            <span>Quiz</span>
+        </p>
+    </div>
+
+    <div id="pageContainer">
+    	<div id="qContainer">
+    		<div id="startBtn" onclick="startQuiz()">Start Quiz!</div>
+    		<div id="instruction" style="display: none"> 
+                <h1>You have 10 questions ahead.</h1>
+                <ul>
+                    <li>Take 10 seconds for each question.</li>
+                    <li>+2 mark for each correct answer.</li>
+                    <li>-1 mark for each wrong answer.</li>
+                    <li>We will report your performance once the quiz is ended.</li>
+                </ul>
+    			Quiz starts in <span id="seconds">5 seconds!</span>
+    		</div>
+    		<div id="quiz" style="display: none">
+                <div id="qDisplay"></div>
+                <div id="choices">
+                    <div class="choice" id="A" onclick="checkAnswer('A')"></div> <br>
+                    <div class="choice" id="B" onclick="checkAnswer('B')"></div> <br>
+                    <div class="choice" id="C" onclick="checkAnswer('C')"></div> <br>
                 </div>
-                <div id="quiz" style="display: none">
-                    <div id="qDisplay"></div>
-                    <div id="choices">
-                        <div class="choice" id="A" onclick="checkAnswer('A')"></div> <br>
-                        <div class="choice" id="B" onclick="checkAnswer('B')"></div> <br>
-                        <div class="choice" id="C" onclick="checkAnswer('C')"></div> <br>
-                    </div>
-                    <div id="timer">
-                        <div id="counter"></div>
-                        <div id="bgTimeBar"></div>
-                        <div id="timeBar"></div>
-                    </div>
-                    <div id="progressBar"></div>
+            
+
+                <div id="timer">
+                    <div id="counter"></div>
+                    <div id="bgTimeBar"></div>
+                    <div id="timeBar"></div>
                 </div>
-                <div id="scoreContainer" style="display: none"></div>
+
+                <div id="progressBar"></div>
+            
+            </div>
+
+            <div id="scoreContainer" style="display: none"></div>
             </div>
 
 
-            <!-- <div id='playerKick'>
-                    <img src="Assets/soccer-player.jpg" alt="player_kicking_ball">
-                </div> -->
             <div class="zoomInOut">
                 <div style="font-size: 10px;">
                     <img id="plustext" alt="Increase text size" src="Assets/zoomInOut/makeTextBigger.png"
