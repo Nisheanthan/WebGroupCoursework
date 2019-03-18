@@ -12,8 +12,9 @@
 </head>
 
 <body>
-   
+
     <ul id="navigation">
+<<<<<<< HEAD
             <li><a href="../index.html" onclick="selectMenuItem(this)">Home</a></li>
             <li><a class="active">Store</a></li>
             <li><a href="../Student03/quiz_page.html" onclick="selectMenuItem(this)">Quiz</a></li>
@@ -27,6 +28,21 @@
             <li><a href="" onclick="selectMenuItem(this)">Football Teams</a></li>
             <li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
             <li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+=======
+        <li><a href="../index.html" onclick="selectMenuItem(this)">Home</a></li>
+        <li><a class="active">Store</a></li>
+        <li><a href="../Student03/" onclick="selectMenuItem(this)">Quiz</a></li>
+        <li><a href="../Student 4/8/8.html" onclick="selectMenuItem(this)">Gallery</a></li>
+        <li><a href="../Student03/details_page.html" onclick="selectMenuItem(this)">About Us</a></li>
+        <li><a href="../Student 2/comment.html" onclick="selectMenuItem(this)">Feedback</a></li>
+        <li><a href="../Student 4/6/6.html" onclick="selectMenuItem(this)">Site Map</a></li>
+        <br> <br>
+        More on Football
+        <li><a href="../Student03/About_football.html" onclick="selectMenuItem(this)">About Football</a></li>
+        <li><a href="" onclick="selectMenuItem(this)">Football Teams</a></li>
+        <li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+        <li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+>>>>>>> a2a52ceacc596a28afd3e1c4237b0a5da48e6fad
     </ul>
 
     <div id="container">
@@ -42,13 +58,16 @@
                 <a href="#balls-div">FootBalls</a>
                 <a href="#gloves-div">Gloves</a>
                 <a href="#guards-div">Knee Guards</a>
-            </div>
 
+            </div>
+            <div class="perchasebtn">
+                <button class="button btn" onclick="makePurchase()">Make Purchase</button>
+            </div>
         </div>
+
 
         <div id="myModal" class="modal">
 
-            <!-- Modal content -->
             <div class="modal-content">
                 <button class="close" onclick="closeForm();">&times;</button>
                 <div class="container">
@@ -66,7 +85,8 @@
                         <input type="text" id="number" name="contactNumber" placeholder="07xxxxxxxx">
 
                         <label for="address">Address</label>
-                        <textarea id="address" name="address" placeholder="No3, Flower Road, Colombo." style="height:50px"></textarea>
+                        <textarea id="address" name="address" placeholder="No3, Flower Road, Colombo."
+                            style="height:50px"></textarea>
 
                         <input class="ok" type="button" onclick="formSubmit()" value="OK">
                     </form>
@@ -94,7 +114,6 @@
                             <option value="size14">UK 14</option>
                         </select><br>
                         <hr>
-
                         <form>
                             <div class="value-button" id="decrease" onclick="decreaseValue(1)" value="Decrease Value">
                                 <span style="font-weight: bold">-</span></div>
@@ -102,7 +121,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(1)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -125,7 +143,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(2)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -148,7 +165,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(3)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -174,7 +190,6 @@
 
                     </div>
                 </div>
-                <!-- <button class="button btn" onclick="makePurchase()">Make Purchase</button> -->
             </div>
         </div>
         <button onclick="topFunction()" id="scrollUpBtn" title="Go to top">Up</button>
@@ -206,7 +221,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(5)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -229,7 +243,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(6)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -252,7 +265,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(7)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -278,12 +290,8 @@
 
                     </div>
                 </div>
-                <!-- <button class="button btn">Make Purchase</button> -->
             </div>
         </div>
-
-
-
         <div class="mainRowContainer">
             <div class="hr">
                 <span class="hr_text" id="balls-div">
@@ -306,7 +314,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(9)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -363,7 +370,6 @@
 
                     </div>
                 </div>
-                <!-- <button class="button btn">Make Purchase</button> -->
             </div>
         </div>
         <div class="mainRowContainer">
@@ -393,7 +399,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(13)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -416,7 +421,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(14)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -465,7 +469,6 @@
 
                     </div>
                 </div>
-                <!-- <button class="button btn">Make Purchase</button> -->
             </div>
         </div>
         <div class="mainRowContainer">
@@ -495,7 +498,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(17)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -518,7 +520,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(18)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -541,7 +542,6 @@
                             <div class="value-button" id="increase" onclick="increaseValue(19)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
                 </div>
                 <div class="polaroid">
@@ -564,12 +564,7 @@
                             <div class="value-button" id="increase" onclick="increaseValue(20)" value="Increase Value">
                                 <span style="font-weight: bold">+</span></div>
                         </form>
-
                     </div>
-                </div>
-                <!-- <button class="button btn">Make Purchase</button> -->
-                <div class="perchasebtn">
-                    <button class="button btn" onclick="makePurchase()">Make Purchase</button>
                 </div>
             </div>
         </div>

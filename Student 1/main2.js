@@ -46,14 +46,16 @@ function makePurchase() {
     document.getElementById("myModal").style.display = "block";
     return;
   }
-  var message = "";
+  var fname = document.getElementById("fname").value;
+  var message = "Dear "+fname+", you have ordered \n";
   var total = 0;
-  for (let index = 0; index < 8; index++) {
+  for (let index = 0; index < 20; index++) {
     const cartInput = "number" + (index + 1);
     var quantity = parseInt(document.getElementById(cartInput).value);
     if (quantity > 0) {
       var price = parseFloat(document.getElementById(cartInput + "-price").innerHTML);
-      message += quantity + " " + document.getElementById(cartInput + "-name").innerHTML + " size " + document.getElementById(cartInput + "-size").value + " at a cost of LKR " + price + " each \n";
+      var size = document.getElementById(cartInput + "-size") ? ("  " + document.getElementById(cartInput + "-size").value) : "";
+      message += quantity + " " + document.getElementById(cartInput + "-name").innerHTML + size + " at a cost of LKR " + price + " each \n";
       total += quantity * price;
     }
   }

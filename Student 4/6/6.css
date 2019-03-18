@@ -8,15 +8,15 @@ svg {
 }
 
 svg rect {
-    fill: red;
-    stroke: black;
+    fill: #05240B;
+    stroke: #4CAF50;
     stroke-width: 5;
     opacity: 0.5;
 }
 
 svg line {
     fill: white;
-    stroke: red;
+    stroke: #4CAF50;
     stroke-width: 4;
 }
 
@@ -35,4 +35,8 @@ svg line {
 #footer a{
     color: white;
     text-decoration: none;
+}
+
+svg text {
+    fill: white;
 }
