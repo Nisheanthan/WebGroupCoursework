@@ -1,4 +1,4 @@
-#breadcrumb ul.breadcrumb {
+#breadcrumb p.breadcrumb {
   margin-top: 0px;
   margin-left: 200px;
   padding: 5px 15px;
@@ -8,20 +8,20 @@
   width:1305px;
   /* top: 0px; */
 }
-#breadcrumb ul.breadcrumb li {
+#breadcrumb p.breadcrumb span {
   display: inline;
   font-size: 18px;
 }
-#breadcrumb ul.breadcrumb li+li:before {
+#breadcrumb p.breadcrumb span+span:before {
   padding: 8px;
   color: black;
   content: '>';
 }
-#breadcrumb ul.breadcrumb li a {
+#breadcrumb p.breadcrumb span a {
   color: #0275d8;
   text-decoration: none;
 }
-#breadcrumb ul.breadcrumb li a:hover {
+#breadcrumb p.breadcrumb span a:hover {
   color: #01447e;
   text-decoration: underline;
 }

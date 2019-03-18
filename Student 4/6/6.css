@@ -1,3 +1,7 @@
+body{
+    margin: 0px !important;
+    /* font-size: 18px; ***other pages follow default size*** */
+}
 svg {
     width: 100%;
     height: 1000px;
@@ -14,4 +18,21 @@ svg line {
     fill: white;
     stroke: red;
     stroke-width: 4;
+}
+
+#footer{
+    color: white;
+    background-color: #05240B;
+    height: 30px;
+    text-align: center;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+#footer a{
+    color: white;
+    text-decoration: none;
 }
