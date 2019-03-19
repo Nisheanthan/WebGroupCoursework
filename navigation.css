@@ -35,6 +35,7 @@ li a:hover:not(.active) {
 
 #container {
     margin-left: 200px;
+    margin-bottom: 50px;
 }
 
 .bottom-li{

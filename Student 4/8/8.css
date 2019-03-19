@@ -38,20 +38,3 @@ select{
 .form-set{
     margin-top: 15px;
 }
-
-#footer{
-    color: white;
-    background-color: #05240B;
-    height: 30px;
-    text-align: center;
-    bottom: 0px;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    width: 100%;
-}
-
-#footer a{
-    color: white;
-    text-decoration: none;
-}
