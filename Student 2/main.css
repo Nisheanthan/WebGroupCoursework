@@ -133,3 +133,54 @@ textarea{
     color: white;
     text-decoration: none;
 }
+
+/* Part-B web page */
+.prtB_title{
+    background-color:  #05240B;
+    color: white;
+    font-size: 60px; 
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    transform: translate(0%, 0%);
+    mix-blend-mode: multiply;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .prtB_content{
+    margin:5px;
+    padding: 8px;
+    border-color: #38723a;
+    background-color:  rgb(65, 124, 77);
+    text-align: justify;
+    color: white;
+  }
+  .prtB_items {
+    float: left;
+    width: 300px;
+    height: 390px;
+    background: rgb(1, 145, 32);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .prtB_items_title{
+    background-color: white;
+    color: #05240B;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    height: 60px;
+    width: 295px;
+    text-align: center;
+    -ms-text-autospace: ideograph-space;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .prtB_items_text{
+    text-align:justify;
+    padding: 5px;
+  }
+  
+  /* Part-B web page */
