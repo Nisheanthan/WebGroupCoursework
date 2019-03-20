@@ -1,11 +1,11 @@
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     counter-reset: rules rulesNav;
 }
 
 #sideContainer{
     width: 200px;
-    /* float: right; */
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -26,12 +26,6 @@ body{
     content: counter(rulesNav) ". ";
 }
 
-.rules h3::before{
-    counter-increment: rules;
-    content: counter(rules) ". ";
-}
-
-
 #sideContainer a{
     display: block;
     color: #fff !important;
@@ -48,12 +42,17 @@ body{
     padding: 8px 16px;
 }
 
+
+.rules h3::before{
+    counter-increment: rules;
+    content: counter(rules) ". ";
+}
+
+
 #pageContainer{
     width: 74%;
     height: 715px;
-    /* float: left; */
     overflow-y: scroll;
-    /* margin: 0%; */
     position: absolute;
     left: 202px;
     top: 0px;
@@ -82,12 +81,10 @@ h2 {
     background-color: white;
     width:68%; 
     margin-left: 4px;
-    /* border: 2px solid #4CAF50; */
 }
 
 #history h2{
     width:98%; 
-    /* margin-right: 14px; */
 }
 
 .rules::after {
@@ -106,12 +103,6 @@ h2 {
     width:30%; 
     height: 200px;
 }
-
-/* .zoomInOut{
-    position: absolute;
-    right: 0;
-    bottom: 30px;
-} */
 
 #footer{
     color: white;

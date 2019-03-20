@@ -71,7 +71,7 @@ var quiz = [
 
 const lastQuestion = quiz.length - 1;
 const questionTime = 10; // 10s
-const gaugeWidth = 150; // 150px
+const gaugeWidth = 150; // timer gauge - 150px
 const gaugeUnit = gaugeWidth / questionTime;
 
 var runningQuestion = 0;
@@ -91,7 +91,7 @@ function startQuiz(){
     document.getElementById("startBtn").style.display = "none";
     document.getElementById("instruction").style.display = "block";
         
-    instructor(5);
+    instructor(10);
     
     setTimeout(function(){
         console.log('Quiz Started')
@@ -100,7 +100,7 @@ function startQuiz(){
         startTimer();
         runner = setInterval(startTimer,1000);
         clearInterval(instruction);
-    },5000);   
+    },10000);   
 }
 
 function instructor(duration) {
@@ -128,16 +128,14 @@ function instructor(duration) {
 function startTimer(){
     if(count <= questionTime && count>=0){
         document.getElementById("counter").innerHTML = count;
+        document.getElementById("counter").style.color = "black";
         document.getElementById("timeBar").style.width = count * gaugeUnit + "px";
         if (count <= 3) {
-           document.getElementById("timeBar").style.backgroundColor = "#ff4d4d";
-           document.getElementById("counter").style.color = "black";
+           document.getElementById("timeBar").style.backgroundColor = "#B22222";
         } else if(count <= 5){
-            document.getElementById("timeBar").style.backgroundColor = "yellow";
-            document.getElementById("counter").style.color = "black";
+            document.getElementById("timeBar").style.backgroundColor = "#DAA520";
         }else {
-            document.getElementById("timeBar").style.backgroundColor = "mediumseagreen";
-            document.getElementById("counter").style.color = "black";
+            document.getElementById("timeBar").style.backgroundColor = "#008000";
         }
         count--;
         totalTime++;
@@ -207,24 +205,36 @@ function answerIsWrong(){
 
 // get score
 function getScore(){
+    var timeTaken = totalTime - quiz.length; // since questions are displayed 1sec later, we are reducing that time get accurate time taken
     console.log('quiz ended');
     console.log('number of correct answer: ' + correct);
     console.log('number of in-correct answer: ' + inCorrect);
-    console.log('total time taken: ' + (totalTime - quiz.length)); // since questions are displayed 1sec later, we are reducing that time get accurate time taken
+    console.log('total time taken: ' + timeTaken); 
     console.log(quiz.length);
 
     var score = 100*(((correct*2) - inCorrect)/(quiz.length*2));
+    var scorePerCent = Math.round(score) ;
+    // var answered = (quiz.length) - (correct+inCorrect);
+    displayScore(scorePerCent,correct,inCorrect,timeTaken);
     
-    var scorePerCent = Math.round() ;
-
-    document.getElementById("scoreContainer").style.display = "block";
-    document.getElementById("scoreContainer").style.backgroundColor = (scorePerCent >= 50) ? "green" : "red";
-    document.getElementById("scoreContainer").innerHTML = "<p>"+ scorePerCent +"%</p>";
 }
 
-function resizeText(multiplier) {
-  if (document.getElementById("pageContainer").style.fontSize == "") {
-    document.getElementById("pageContainer").style.fontSize = "1.0em";
-  }
-  document.getElementById("pageContainer").style.fontSize = parseFloat(document.getElementById("pageContainer").style.fontSize) + (multiplier * 1.0) + "em";
+function displayScore(scorePerCent,correct,inCorrect,timeTaken){
+    var answered = correct+inCorrect;
+    document.getElementById("scoreContainer").style.display = "block";
+    document.getElementById("scoreContainer").style.backgroundColor = (scorePerCent >= 50) ? "green" : "red";
+    document.getElementById("percentage").innerHTML = scorePerCent;
+    document.getElementById("answered").innerHTML = answered;
+    document.getElementById("correct").innerHTML = correct;
+    document.getElementById("incorrect").innerHTML = inCorrect;
+    document.getElementById("timeTaken").innerHTML = timeTaken;
+}
+
+function changeFontSize(pixels) {
+    var textSize = document.body.style.fontSize;
+    if (textSize == "") {
+        document.body.style.fontSize = "1.0em";
+    }
+
+    document.body.style.fontSize = parseFloat(document.body.style.fontSize) + pixels + "em";
 }

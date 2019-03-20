@@ -26,6 +26,10 @@
                 <li><a href="" onclick="selectMenuItem(this)">Football Teams</a></li>
                 <li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
                 <li><a href="" onclick="selectMenuItem(this)">more navigation</a></li>
+                <li class="bottom-li">
+                        <button onclick="changeFontSize(0.05)"><img src="../Student 1/makeTextBigger.png"></button>
+                        <button onclick="changeFontSize(-0.05)"><img src="../Student 1/makeTextSmaller.png"></button>
+                </li>
         </ul>
     </div>
 
@@ -45,13 +49,13 @@
     		<div id="startBtn" onclick="startQuiz()">Start Quiz!</div>
     		<div id="instruction" style="display: none"> 
                 <h1>You have 10 questions ahead.</h1>
-                <ul>
-                    <li>Take 10 seconds for each question.</li>
-                    <li>+2 mark for each correct answer.</li>
-                    <li>-1 mark for each wrong answer.</li>
-                    <li>We will report your performance once the quiz is ended.</li>
-                </ul>
-    			Quiz starts in <span id="seconds">5 seconds!</span>
+                <div>
+                    <span>Take 10 seconds for each question.</span> <br>
+                    <span>+2 mark for each correct answer.</span> <br>
+                    <span>-1 mark for each wrong answer.</span> <br> 
+                    <span>We will report your performance once the quiz is ended.</span> <br> <br>
+                </div>
+    			Quiz starts in <span id="seconds">10 seconds!</span>
     		</div>
     		<div id="quiz" style="display: none">
                 <div id="qDisplay"></div>
@@ -72,17 +76,15 @@
             
             </div>
 
-            <div id="scoreContainer" style="display: none"></div>
-            </div>
-
-
-            <div class="zoomInOut">
-                <div style="font-size: 10px;">
-                    <img id="plustext" alt="Increase text size" src="Assets/zoomInOut/makeTextBigger.png"
-                        onclick="resizeText(1)" /> <br>
-                    <img id="minustext" alt="Decrease text size" src="Assets/zoomInOut/makeTextSmaller.png"
-                        onclick="resizeText(-1)" />
+            <div id="scoreContainer" style="display: none">
+                <p> Hey! You have scored <br><span id="percentage"> </span>%</p>
+                <div> 
+                    Questions Answered - <span id="answered"></span> <br>
+                    Goals  - <span id="correct"></span> <br>
+                    Missed - <span id="incorrect"></span> <br>
+                    Time Taken - <span id="timeTaken"></span>seconds
                 </div>
+            </div>
             </div>
 
         </div>
